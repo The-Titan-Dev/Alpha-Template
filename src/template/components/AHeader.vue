@@ -2,6 +2,7 @@
   <header>
     <div class="nav__left">
       <img src="../../assets/images/Fujitsu-Logo.png" class="nav__logo" />
+       <!-- NAVIGATION MENU -->
       <div class="nav__menus">
           <ul>
               <li><a>Home</a></li>
@@ -11,8 +12,7 @@
       </div>
     </div>
     <div class="nav__right">
-
-      <!-- USER ACCOUNT INFORMATION (BUTTON) -->
+       <!-- USER ACCOUNT INFORMATION (BUTTON) -->
       <div class="account__info">
         <div class="account__info__user">
           <span>John Doe</span>

@@ -12,16 +12,18 @@ header {
 }
 
 .nav__left {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
     height: auto;
     width: auto;
-    display:flex;
-    flex-wrap: nowrap;
-    align-items: center;
+
     ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
         overflow: hidden;
+        padding: 0;
+        padding-left: 25px;
     }
 
     li {
@@ -32,7 +34,7 @@ header {
         display: block;
         color: white;
         text-align: center;
-        padding: 126px;
+        padding: 16px;
         text-decoration: none;
     }
 }
