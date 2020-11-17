@@ -1,8 +1,98 @@
 header {
-  width: 100%;
-  height: 70px;
-  background: white;
-  border-top: 2px solid $red;
-  border-bottom: 1px solid $gray;
- @include box-shadow(0 0 20px 8px #d8d8d8);
+    align-items: center;
+    background: white;
+    border-top: 2px solid $red;
+    border-bottom: 1px solid $gray;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+    width: 100%;
+    @include box-shadow(0 0 20px 8px #d8d8d8);
 }
+
+.nav__left {
+    height: auto;
+    width: auto;
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 126px;
+        text-decoration: none;
+    }
+}
+
+
+
+.nav__logo {
+    height: 80%;
+    width: 98px;
+}
+
+
+.nav__right {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.account__info {
+    align-items: center;
+    background: $red;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5px 15px 5px 15px;
+
+    &__user {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding-right: 15px;
+
+        span:nth-child(1) {
+            color: #cacbcc;
+            font-size: 13px;
+        }
+
+        span:nth-child(2) {
+            font-size: 14px;
+        }
+    }
+}
+
+.icon__account {
+    color: white;
+}
+
+.info {
+    color: #d0d5de;
+}
+
+@include xl {}
+
+@include lg {}
+
+@include md {}
+
+@include sm {}
+
+@include xs {}
