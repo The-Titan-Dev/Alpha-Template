@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 // Main Layout Component
-const TheContainer = () => import(/*webpackChunkName: "layout"*/"@/components/layout/TheContainer");
+const TheContainer = () => import(/*webpackChunkName: "layout"*/"@/template/layout/TheContainer");
 
 // Pages
 const Blank = () => import(/*webpackChunkName: "blank-page"*/"@/views/Blank");

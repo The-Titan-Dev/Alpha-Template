@@ -1,7 +1,7 @@
 <template>
     <div>
         <TheHeader/>
-        <router-view/>aasdasd
+        <router-view/>
     </div>
 </template>
 
