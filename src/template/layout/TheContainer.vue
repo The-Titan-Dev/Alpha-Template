@@ -1,6 +1,6 @@
 <template>
     <div>
-        <TheHeader/>
+        <TheHeader></TheHeader>
         <router-view/>
     </div>
 </template>
@@ -10,7 +10,7 @@ import TheHeader from './TheHeader.vue'
 export default {
     name:'TheContainer',
     components:{
-        TheHeader,
+        TheHeader
     }
 }
 </script>
