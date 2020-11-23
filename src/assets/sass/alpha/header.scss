@@ -6,62 +6,170 @@ header {
     display: flex;
     height: 70px;
     justify-content: space-between;
-    padding: 0 50px 0 50px;
+    transition: 1s;
     width: 100%;
     @include box-shadow(0 0 20px 8px #d8d8d8);
 }
 
+//LEFT NAVIGATION
 .nav__left {
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    height: auto;
+    height: 100%;
     width: auto;
+}
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        overflow: hidden;
-        padding: 0;
-        padding-left: 25px;
-    }
+.menu__default {
+    animation: fadeIn 1s;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    padding-left: 25px;
+}
 
-    li {
-        float: left;
-    }
+.menu__default__item {
+    float: left;
+    color: $black;
+    cursor: pointer;
+    padding: 16px;
+    text-align: center;
+    transition: .5s;
 
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 16px;
+    a {
         text-decoration: none;
     }
 }
 
+.item__link {
+    color: $black;
+    text-decoration: none;
+    transition: .5s;
+}
 
+.item__link:hover {
+    color: $red;
+}
+
+.menu__min {
+    animation: fadeIn 1s;
+    color: $red;
+    cursor: pointer;
+}
 
 .nav__logo {
     height: 80%;
     width: 98px;
 }
 
+.menu__default__item--dropped {
+    border-bottom: 2px solid $red;
 
-.nav__right {
+    .menu__default__item {
+        color: $red;
+    }
+}
+
+.anchor {
+    transition: .5s;
+
+    &--down {
+        transform: rotate(90deg);
+    }
+}
+
+// DROPDOWN MENU
+.dropdown {
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
     height: auto;
-    width: auto;
+    justify-content: center;
+    max-width: 60%;
+    overflow: hidden;
+    top: 70px;
+    transition: 1s;
+    position: absolute;
+    @include box-shadow(0 10px 20px 8px #d8d8d8);
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 20px;
+        margin-top: 40px;
+        padding: 0 50px 0 50px;
+        border-right: 1px solid $menu__divider;
+        border-left: 1px solid $menu__divider;
+    }
+
+    &__item {
+        margin: 0px 0px 5px 0px;
+        padding: 5px;
+        transition: .5s;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__item:hover {
+        color: $red;
+    }
+
+    &__title {
+        color: $red;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px 10px 5px 10px;
+    }
+
+    .active {
+        animation: moveGradient 2s linear infinite;
+        background: linear-gradient(90deg, #A30B1A, #B3061C, #C20B1D, #A30B1A);
+        background-size: 400%;
+        border-radius: 5px;
+        color: white;
+    }
+
+    &--hidden {
+        transform: scaleY(0);  
+        transform-origin: top;
+    }
+}
+
+// ADDITIONAL OPTION
+.dropdown--full {
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+// RIGHT NAVIGATION
+.nav__right {
+    align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
+    height: 100%;
+    width: auto;
 }
 
 .account__info {
     align-items: center;
-    background: $red;
+    animation: moveGradient 5s linear infinite;
+    background: linear-gradient(90deg, #A30B1A, #B3061C, #C20B1D, #A30B1A);
+    background-size: 400%;
     border-radius: 10px;
+    cursor: pointer;
     display: flex;
     flex-wrap: nowrap;
-    padding: 5px 15px 5px 15px;
+    height: 75%;
+    padding: 5px 10px 5px 10px;
+    width: auto;
+    transition: .5s;
+    @include box-shadow(0 0 20px 8px #d8d8d8);
 
     &__user {
         color: white;
@@ -73,12 +181,34 @@ header {
         span:nth-child(1) {
             color: #cacbcc;
             font-size: 13px;
+            transition: .1s;
         }
 
         span:nth-child(2) {
             font-size: 14px;
+            transition: .1s;
         }
     }
+}
+
+.account__info:hover {
+    @include box-shadow(0 0 12px 1px $red);
+}
+
+.account__info:active {
+    .account__info__user {
+        span:nth-child(1) {
+            font-size: 12.5px;
+        }
+
+        span:nth-child(2) {
+            font-size: 13.5px;
+        }
+    }
+}
+
+.system__icon {
+    color: #cecece;
 }
 
 .icon__account {
@@ -89,12 +219,75 @@ header {
     color: #d0d5de;
 }
 
-@include xl {}
+// MEDIASCREENS
+@include xl {
+    header {
+        padding: 0 50px 0 50px;
+    }
 
-@include lg {}
+    .menu__min {
+        display: none;
+    }
+}
 
-@include md {}
+@include lg {
+    header {
+        padding: 0 30px 0 30px;
+    }
 
-@include sm {}
+    .menu__min {
+        display: none;
+    }
+}
 
-@include xs {}
+@include md {
+    header {
+        padding: 0 30px 0 30px;
+    }
+
+    .menu__min {
+        display: none;
+    }
+}
+
+@include sm {
+    header {
+        padding: 0 30px 0 30px;
+    }
+
+    .menu__default {
+        display: none;
+    }
+}
+
+@include xs {
+    header {
+        padding: 0 20px 0 20px;
+    }
+
+    .menu__default {
+        display: none;
+    }
+}
+
+
+// ANIMATION
+@keyframes moveGradient {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: 400%
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

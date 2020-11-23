@@ -1,8 +1,5 @@
 <template>
-  <AHeader>
-
-  </AHeader>
-  
+  <AHeader></AHeader>
 </template>
 
 <script>
@@ -11,7 +8,7 @@ export default {
   name: "TheHeader",
   components: {
     AHeader
-  },
+  }
 };
 </script>
 

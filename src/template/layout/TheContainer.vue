@@ -1,6 +1,6 @@
 <template>
     <div>
-        <TheHeader/>
+        <TheHeader></TheHeader>
         <div style = "text-align: center; margin-top: 10px">
             <AButton method_name = "doSomething">NORMAL</AButton>
             <AButton method_name = "doSomething" size="sm">SMALL</AButton>
