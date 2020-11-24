@@ -1,14 +1,9 @@
 <template>
-    <h1>Blank</h1>
+  <h1>Blank</h1>
 </template>
 <script>
-
-
 export default {
-  name: "Home",
- 
+  name: "Home"
 };
 </script>
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

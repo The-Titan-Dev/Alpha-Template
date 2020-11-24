@@ -12,7 +12,7 @@
         <ul class="menu__default">
           <li class="menu__default__item"><a class="item__link">Home</a></li>
           <li class="menu__default__item menu__default__item--dropped">
-            <a class="item__link" >Main Menu</a>
+            <a class="item__link">Main Menu</a>
             <font-awesome-icon
               class="anchor anchor--down ml-2"
               icon="angle-right"
@@ -77,7 +77,7 @@
 
 <script>
 export default {
-  name: "AHeader",
+  name: "AHeader"
 };
 </script>
 
