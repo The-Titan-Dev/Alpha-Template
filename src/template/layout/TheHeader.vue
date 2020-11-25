@@ -28,10 +28,10 @@
               </ul>
 
               <ul class="dropdown__menu">
-                <li class="dropdown__title active">MODULE 2</li>
+                <li class="dropdown__title dropdown--active">MODULE 2</li>
                 <li class="dropdown__item">Item 2</li>
                 <li class="dropdown__item">Item 3</li>
-                <li class="dropdown__item active">Item 4</li>
+                <li class="dropdown__item dropdown--active">Item 4</li>
                 <li class="dropdown__item">Item 5</li>
               </ul>
 

@@ -125,7 +125,7 @@ header {
         padding: 5px 10px 5px 10px;
     }
 
-    .active {
+    &--active {
         animation: moveGradient 2s linear infinite;
         background: linear-gradient(90deg, #A30B1A, #B3061C, #C20B1D, #A30B1A);
         background-size: 400%;
@@ -134,7 +134,7 @@ header {
     }
 
     &--hidden {
-        // transform: scaleY(0);  
+        // transform: scaleY(0);   
         transform-origin: top;
     }
 }
@@ -225,9 +225,9 @@ header {
         padding: 0 50px 0 50px;
     }
 
-    .menu__min {
-        display: none;
-    }
+    // .menu__min {
+    //     display: none;
+    // }
 }
 
 @include lg {
@@ -235,9 +235,9 @@ header {
         padding: 0 30px 0 30px;
     }
 
-    .menu__min {
-        display: none;
-    }
+    // .menu__min {
+    //     display: none;
+    // }
 }
 
 @include md {
@@ -245,9 +245,9 @@ header {
         padding: 0 30px 0 30px;
     }
 
-    .menu__min {
-        display: none;
-    }
+    // .menu__min {
+    //     display: none;
+    // }
 }
 
 @include sm {
