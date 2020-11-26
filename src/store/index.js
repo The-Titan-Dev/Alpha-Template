@@ -3,9 +3,15 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
+import alpha from './modules/alpha'
+
 export default new Vuex.Store({
-  state: {},
+  state: {
+
+  },
   mutations: {},
   actions: {},
-  modules: {}
+  modules: {
+    alpha,
+  }
 });
