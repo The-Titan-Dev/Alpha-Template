@@ -1,6 +1,6 @@
 <template>
   <!-- SIDEBAR NAVIGATION MENU -->
-  <aside class="sidebar">
+  <aside class="sidebar d-none">
     <!-- SIDEBAR MENU ITEM -->
     <div class="sidebar__menu">
       <label class="sidebar__menu__headline">Main Menu</label>

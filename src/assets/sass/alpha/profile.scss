@@ -1,0 +1,132 @@
+.profile {
+    background: white;
+    bottom: 0;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px;
+    @include box-shadow(0 0 30px 10px #d8d8d8);
+
+    &__title {
+        color: $black;
+        font-family: PoppinsBold;
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    &__user {
+        color: $black;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        height: auto;
+        font-size: 15px;
+        padding: 20px;
+        width: 100%;
+
+    }
+}
+
+.profile__image {
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.user__name {
+    color: $prime;
+    font-family: PoppinsBold;
+    font-size: 18px;
+}
+
+.profile__logout__btn {
+    background: $prime;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    padding: 8px;
+    width: 50%;
+
+    @include box-shadow(6px 6px 6px 0px #d8d8d8);
+
+}
+
+.profile__system {
+    height: auto;
+    width: 100%;
+
+    label:nth-child(2) {
+        color: #e24857;
+        font-family: PoppinsBold;
+        font-size: 18px;
+    }
+}
+
+.system__initial {
+    align-items: center;
+    background: #f7ced2;
+    border-radius: 10px;
+    color: $prime;
+    display: flex;
+    font-size: 80px;
+    height: 100px;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.prime {
+    color: $prime;
+}
+
+.divider {
+    background: #f3d0d3;
+    height: 1px;
+    width: 80%;
+}
+
+.profile__option {
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn__small {
+    align-items: center;
+    border-radius: 10px;
+    cursor:pointer;
+    display: flex;
+    font-size: 30px;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+    margin: 5px;
+
+    &--blue {
+        background: #82c6ef;
+        color: #1980ff;
+    }
+
+    &--black {
+        background: #929292;
+        color: #494a4c;
+    }
+
+    &--orange {
+        background: #ffc487;
+        color: #d27808;
+    }
+
+    &--red {
+        background: #f7ced2;
+        color: $prime;
+    }
+}

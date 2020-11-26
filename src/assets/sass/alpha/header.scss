@@ -134,7 +134,7 @@ header {
     }
 
     &--hidden {
-        // transform: scaleY(0);   
+        transform: scaleY(0);   
         transform-origin: top;
     }
 }
