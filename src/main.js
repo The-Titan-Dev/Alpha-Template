@@ -19,7 +19,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(faUser,faInfoCircle,faBars,faAddressCard,faInfo,faAngleRight,faAngleDown,faClipboardList,faRing,faClone,faColumns,
 faChartArea,faChartPie,faChartLine,faChartBar,faSignOutAlt,faEnvelope,faWindowClose,faComments,faQuestion,faEdit,faBell)
  
+ 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
+// require('vue2-animate/dist/vue2-animate.min.css')
 
 new Vue({
   router,

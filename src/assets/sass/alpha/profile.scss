@@ -5,6 +5,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    transition: .5s;
     width: 400px;
     @include box-shadow(0 0 30px 10px #d8d8d8);
 
@@ -28,6 +29,11 @@
         padding: 20px;
         width: 100%;
 
+    }
+
+    &--hidden {
+        transform: scaleX(0);
+        transform-origin: right;
     }
 }
 
@@ -102,7 +108,7 @@
 .btn__small {
     align-items: center;
     border-radius: 10px;
-    cursor:pointer;
+    cursor: pointer;
     display: flex;
     font-size: 30px;
     height: 50px;
@@ -129,4 +135,18 @@
         background: #f7ced2;
         color: $prime;
     }
+}
+
+.slide-fade-enter-active {
+    transition: all .8s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .8s ease;
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+    transform: translateX(400px);
+    opacity: 0;
 }

@@ -1,8 +1,14 @@
 <template>
-  <aside class="profile">
-    <font-awesome-icon icon="window-close" class="mr-3 mt-2 prime profile__clos" pull="right" size="2x" />
+ <transition name="slide-fade">
+  <aside class="profile" v-if="show">
+    <font-awesome-icon
+      icon="window-close"
+      class="mr-3 mt-2 prime"
+      pull="right"
+      size="2x"
+    />
     <label class="profile__title">USER INFORMATION </label>
-    
+
     <div class="profile__user">
       <img
         class="profile__image"
@@ -12,7 +18,10 @@
         <label class="user__name mb-0"> John Doe </label>
         <label class="d-block mb-0"> IT Staff </label>
         <label class="d-block mb-0"> MIT </label>
-        <label class="d-block mb-0"><font-awesome-icon class="prime" icon="envelope" /> johndoe@email.com </label>
+        <label class="d-block mb-0"
+          ><font-awesome-icon class="prime" icon="envelope" />
+          johndoe@email.com
+        </label>
       </div>
     </div>
     <center>
@@ -21,7 +30,6 @@
       </button>
       <div class="divider"></div>
     </center>
-    
     <label class="profile__title">SYSTEM INFORMATION</label>
 
     <div class="profile__system">
@@ -46,20 +54,32 @@
 
     <label class="profile__title">OTHER OPTIONS</label>
     <div class="profile__option">
-      <span class="btn__small btn__small--red"><font-awesome-icon icon="bell"/></span>
-      <span class="btn__small btn__small--blue"><font-awesome-icon icon="comments"/></span>
-      <span class="btn__small btn__small--orange"><font-awesome-icon icon="edit"/></span>
-      <span class="btn__small btn__small--black"><font-awesome-icon icon="question"/></span>
-    </div>
+      <span class="btn__small btn__small--red"
+        ><font-awesome-icon icon="bell"
+      /></span>
+      <span class="btn__small btn__small--blue"
+        ><font-awesome-icon icon="comments"
+      /></span>
+      <span class="btn__small btn__small--orange"
+        ><font-awesome-icon icon="edit"
+      /></span>
+      <span class="btn__small btn__small--black"
+        ><font-awesome-icon icon="question"
+      /></span>
+    </div>    
   </aside>
+  </transition>
 </template>
 
 <script>
 export default {
-  name: "TheHeader",
+  name: "TheAside",
   data() {
-    return {};
+    return {
+      show: true,
+    };
   },
+  methods: {},
 };
 </script>
 

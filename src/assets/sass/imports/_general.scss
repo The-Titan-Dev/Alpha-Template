@@ -2,13 +2,17 @@
 @import "mediascreens";
 @import "cross_settings";
 
- *,
- html {
-     box-sizing: border-box;
-     padding: 0;
-     margin: 0;
- }
+*,
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-*{
-     font-family: 'PoppinsRegular';
+* {
+    font-family: 'PoppinsRegular';
+}
+
+body {
+    overflow-x: hidden;
 }
