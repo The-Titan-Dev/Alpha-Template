@@ -22,13 +22,13 @@ const routes = [
         path: "/blank",
         name: "Blank",
         component: Blank
+      },
+      {
+        path: "/buttons",
+        name: "Buttons",
+        component: Buttons
       }
     ]
-  },
-  {
-    path: "/Buttons",
-    name: "Buttons",
-    component: Buttons
   }
 ];
 
