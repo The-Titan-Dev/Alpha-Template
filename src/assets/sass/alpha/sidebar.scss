@@ -1,9 +1,9 @@
 .sidebar {
     background: $gray__backdrop;
-    height: 100vh;
-    position: absolute;
+    height: 100%;
+    position: fixed;
     width: 100%;
-
+    top:70px;
     &__menu {
         background: white;
         cursor: pointer;
@@ -52,4 +52,19 @@
 .sidebar__submenu {
     height: auto;
     transition: .5s;
+}
+
+.sidebar-slide-enter-active {
+    transition: all .5s ease;
+}
+
+.sidebar-slide-leave-active {
+    transition: all .5s ease;
+}
+
+.sidebar-slide-enter,
+.sidebar-slide-leave-to {
+    // transform: translateX(-150px);
+    // transform-origin: top;
+    opacity: 0;
 }

@@ -8,6 +8,7 @@ header {
     justify-content: space-between;
     transition: 1s;
     width: 100%;
+    position:fixed;
     @include box-shadow(0 0 20px 8px #d8d8d8);
 }
 
@@ -131,11 +132,6 @@ header {
         background-size: 400%;
         border-radius: 5px;
         color: white;
-    }
-
-    &--hidden {
-        transform: scaleY(0);   
-        transform-origin: top;
     }
 }
 
@@ -290,4 +286,19 @@ header {
     to {
         opacity: 1;
     }
+}
+
+.dropdown-menu-slide-enter-active {
+    transition: all .8s ease;
+}
+
+.dropdown-menu-slide-leave-active {
+    transition: all .8s ease;
+}
+
+.dropdown-menu-slide-enter,
+.dropdown-menu-slide-leave-to {
+    transform: translateY(-150px);
+    transform-origin: top;
+    opacity: 0;
 }

@@ -77,9 +77,6 @@
 import { mapActions , mapGetters } from "vuex";
 export default {
   name: "TheAside",
-  data() {
-    return {};
-  },
   methods: {
     ...mapActions(["setProfileVisibility"]),
   },

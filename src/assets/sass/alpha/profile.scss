@@ -6,7 +6,7 @@
     right: 0;
     top: 0;
     transition: .5s;
-    width: 400px;
+    width: 100%;
     @include box-shadow(0 0 30px 10px #d8d8d8);
 
     &__title {
@@ -151,6 +151,26 @@
     opacity: 0;
 }
 
-.profile__closeBtn{
+.profile__closeBtn {
     cursor: pointer;
 }
+
+@include xl {
+    .profile {
+        width: 400px;
+    }
+}
+
+@include lg {
+    .profile {
+        width: 400px;
+    }
+}
+
+@include md {
+    .profile {
+        width: 400px;
+    }
+}
+
+
