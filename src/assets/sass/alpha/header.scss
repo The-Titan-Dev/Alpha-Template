@@ -6,9 +6,9 @@ header {
     display: flex;
     height: 70px;
     justify-content: space-between;
-    transition: 1s;
+    transition: .5s;
     width: 100%;
-    position:fixed;
+    position: fixed;
     @include box-shadow(0 0 20px 8px #d8d8d8);
 }
 
@@ -46,7 +46,7 @@ header {
 .item__link {
     color: $black;
     text-decoration: none;
-    transition: .5s;
+    // transition: 1s;
 }
 
 .item__link:hover {
@@ -62,14 +62,6 @@ header {
 .nav__logo {
     height: 80%;
     width: 98px;
-}
-
-.menu__default__item--dropped {
-    border-bottom: 2px solid $red;
-
-    .menu__default__item {
-        color: $red;
-    }
 }
 
 .anchor {
@@ -301,4 +293,9 @@ header {
     transform: translateY(-150px);
     transform-origin: top;
     opacity: 0;
+}
+
+.router-link-exact-active {
+    border-bottom: 2px solid $red;
+    color: $red;
 }

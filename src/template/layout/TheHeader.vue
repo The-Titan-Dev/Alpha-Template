@@ -10,16 +10,17 @@
       <!-- NAVIGATION MENU -->
       <div class="nav__menus">
         <ul class="menu__default">
-          <li class="menu__default__item"><a class="item__link">Home</a></li>
+          <li class="menu__default__item"><router-link to="/" class="item__link">Home</router-link></li>
           <li
-            class="menu__default__item menu__default__item--dropped"
+            class="menu__default__item"
             @click="setDDMenuVisibility"
           >
-            <a class="item__link">Main Menu</a>
+            <span class="item__link">Main Menu</span>
             <font-awesome-icon
-              class="anchor anchor--down ml-2"
+              class="anchor ml-2"
               icon="angle-right"
               size="sm"
+              :class="{'anchor--down':getShowDDMenuStatus}"
             />
             <transition name="dropdown-menu-slide">
               <div class="dropdown dropdown--full" v-if="getShowDDMenuStatus">
@@ -32,10 +33,10 @@
                 </ul>
 
                 <ul class="dropdown__menu">
-                  <li class="dropdown__title dropdown--active">MODULE 2</li>
+                  <li class="dropdown__title">MODULE 2</li>
                   <li class="dropdown__item">Item 2</li>
                   <li class="dropdown__item">Item 3</li>
-                  <li class="dropdown__item dropdown--active">Item 4</li>
+                  <li class="dropdown__item">Item 4</li>
                   <li class="dropdown__item">Item 5</li>
                 </ul>
 
@@ -58,8 +59,8 @@
               </div>
             </transition>
           </li>
-          <li class="menu__default__item"><a class="item__link">Reports</a></li>
-          <li class="menu__default__item"><a class="item__link">About</a></li>
+          <li class="menu__default__item"><router-link to="/blank" class="item__link">Reports</router-link></li>
+          <li class="menu__default__item"><router-link to="/" class="item__link">About</router-link></li>
         </ul>
       </div>
     </div>

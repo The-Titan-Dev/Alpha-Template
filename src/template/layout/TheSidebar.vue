@@ -18,7 +18,7 @@
               Buttons
             </a>
           </li>
-          <li class="sidebar__menu__item--active">
+          <li>
             <a>
               <font-awesome-icon icon="clone" size="sm" class="icon" />
               Cards
@@ -30,41 +30,60 @@
               Nav
             </a>
           </li>
-          <li>
+          <li @click="setSidebarSubMenuVisibility">
             <font-awesome-icon icon="chart-area" size="sm" class="icon" />
             Charts
-            <font-awesome-icon
-              icon="angle-right"
-              size="sm"
-              class="icon anchor"
-              pull="right"
-            />
-            <ul class="sidebar__submenu">
-              <li>
-                <a>
-                  <font-awesome-icon icon="chart-pie" size="sm" class="icon" />
-                  Pie Chart
-                </a>
-              </li>
-              <li>
-                <a>
-                  <font-awesome-icon icon="chart-line" size="sm" class="icon" />
-                  Line Chart
-                </a>
-              </li>
-              <li>
-                <a>
-                  <font-awesome-icon icon="chart-bar" size="sm" class="icon" />
-                  Bar Chart
-                </a>
-              </li>
-              <li>
-                <a>
-                  <font-awesome-icon icon="chart-pie" size="sm" class="icon" />
-                  Doughnut Chart
-                </a>
-              </li>
-            </ul>
+              <font-awesome-icon
+                icon="angle-right"
+                size="sm"
+                class="icon anchor"
+                pull="right"
+               :class="{'anchor--down':getShowSidebarSubMenuStatus}"
+              />
+            <transition name="sidebar-sub-slide">
+              <ul class="sidebar__submenu" v-if="getShowSidebarSubMenuStatus">
+                <li>
+                  <a>
+                    <font-awesome-icon
+                      icon="chart-pie"
+                      size="sm"
+                      class="icon"
+                    />
+                    Pie Chart
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <font-awesome-icon
+                      icon="chart-line"
+                      size="sm"
+                      class="icon"
+                    />
+                    Line Chart
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <font-awesome-icon
+                      icon="chart-bar"
+                      size="sm"
+                      class="icon"
+                    />
+                    Bar Chart
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <font-awesome-icon
+                      icon="chart-pie"
+                      size="sm"
+                      class="icon"
+                    />
+                    Doughnut Chart
+                  </a>
+                </li>
+              </ul>
+            </transition>
           </li>
         </ul>
       </div>
@@ -77,10 +96,10 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: "TheSidebar",
   methods: {
-    ...mapActions(["setSidebarVisibility"]),
+    ...mapActions(["setSidebarVisibility", "setSidebarSubMenuVisibility"]),
   },
   computed: {
-    ...mapGetters(["getShowSidebarStatus"]),
+    ...mapGetters(["getShowSidebarStatus", "getShowSidebarSubMenuStatus"]),
   },
 };
 </script>

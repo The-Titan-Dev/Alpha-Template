@@ -3,7 +3,8 @@
     height: 100%;
     position: fixed;
     width: 100%;
-    top:70px;
+    top: 70px;
+
     &__menu {
         background: white;
         cursor: pointer;
@@ -33,14 +34,6 @@
             ul {
                 padding: 10px 0px 0px 10px;
             }
-
-            &--active {
-                color: $red !important;
-
-                .icon {
-                    color: $red !important;
-                }
-            }
         }
     }
 }
@@ -66,5 +59,28 @@
 .sidebar-slide-leave-to {
     // transform: translateX(-150px);
     // transform-origin: top;
+    opacity: 0;
+}
+
+.router-link-exact-active {
+    color: $red !important;
+
+    .icon {
+        color: $red !important;
+    }
+}
+
+.sidebar-sub-slide-enter-active {
+    transition: all .5s ease;
+}
+
+.sidebar-sub-slide-leave-active {
+    transition: all .5s ease;
+}
+
+.sidebar-sub-slide-enter,
+.sidebar-sub-slide-leave-to {
+    transform: translateX(-150px);
+    transform-origin: top;
     opacity: 0;
 }
