@@ -1,5 +1,5 @@
 <template>
-    <h1>Blank</h1>
+  <h1>Blank</h1>
 </template>
 <script>
 export default {
@@ -7,6 +7,4 @@ export default {
 };
 
 </script>
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

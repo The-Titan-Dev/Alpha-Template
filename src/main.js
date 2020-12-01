@@ -5,10 +5,10 @@ import store from "./store";
 
 Vue.config.productionTip = false;
 
-import {BootstrapVue } from 'bootstrap-vue';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
-Vue.use(BootstrapVue)
+import { BootstrapVue } from "bootstrap-vue";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
+Vue.use(BootstrapVue);
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUser,faInfoCircle,faBars,faAddressCard ,faInfo,faAngleRight,faAngleDown,faClipboardList,faRing,faClone,faColumns,

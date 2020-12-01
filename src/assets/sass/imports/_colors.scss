@@ -3,6 +3,38 @@ $gray:#F2F3F7;
 $black:#6b6b6b;
 $prime:#e84656;
 
+$gray__backdrop:rgba(97,97,97,0.8);
+
+$light-red : #e24857;
+$green : #28ca5f;
+$light-green : #3ddd73;
+$orange : #E29C06;
+$light-orange : #f0aa14;
+$blue : #3698f3;
+$light-blue : rgb(58, 186, 245);
+
+
 $menu__divider:#e4e4e4;
 $active__menu:#e4c2c5;
-$gray__backdrop:rgba(97,97,97,0.8);
+
+
+
+
+
+$primary : linear-gradient($light-red, #a02d2f);
+$primary-hover :linear-gradient($light-red,#a03d3d);
+$primary-animate-border : $light-red, #ffcece;
+
+$success : linear-gradient($green, #309051);
+$success-hover :linear-gradient($light-green,#309051);
+$success-animate-border : $light-green, #ceffdd;
+
+
+$warning : linear-gradient($orange, #e29c06);
+$warning-hover :linear-gradient($light-orange,#d19526);
+$warning-animate-border : $light-orange, #ffebce;
+
+$info : linear-gradient($blue, #1e87e9);
+$info-hover :linear-gradient($light-blue,#3a98f0);
+$info-animate-border : $light-blue, #cedfff;
+
