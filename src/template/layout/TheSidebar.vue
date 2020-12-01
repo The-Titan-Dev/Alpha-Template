@@ -7,15 +7,15 @@
         <label class="sidebar__menu__headline">Main Menu</label>
         <ul class="sidebar__menu__item">
           <li>
-            <a>
-              <font-awesome-icon icon="columns" size="sm" class="icon" />
-              Form
-            </a>
+            <router-link to="/buttons" class="item__link">
+              <font-awesome-icon icon="ring" size="sm" class="icon" />
+              Buttons
+            </router-link>
           </li>
           <li>
             <a>
-              <font-awesome-icon icon="ring" size="sm" class="icon" />
-              Buttons
+              <font-awesome-icon icon="columns" size="sm" class="icon" />
+              Form
             </a>
           </li>
           <li>
@@ -33,13 +33,13 @@
           <li @click="setSidebarSubMenuVisibility">
             <font-awesome-icon icon="chart-area" size="sm" class="icon" />
             Charts
-              <font-awesome-icon
-                icon="angle-right"
-                size="sm"
-                class="icon anchor"
-                pull="right"
-               :class="{'anchor--down':getShowSidebarSubMenuStatus}"
-              />
+            <font-awesome-icon
+              icon="angle-right"
+              size="sm"
+              class="icon anchor"
+              pull="right"
+              :class="{ 'anchor--down': getShowSidebarSubMenuStatus }"
+            />
             <transition name="sidebar-sub-slide">
               <ul class="sidebar__submenu" v-if="getShowSidebarSubMenuStatus">
                 <li>

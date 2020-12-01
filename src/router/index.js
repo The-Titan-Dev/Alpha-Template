@@ -8,7 +8,7 @@ const TheContainer = () =>
 // Pages
 const Blank = () => import(/*webpackChunkName: "blank-page"*/ "@/views/Blank");
 const Buttons = () =>
-  import(/*webpackChunkName: "blank-page"*/ "@/views/Buttons");
+  import(/*webpackChunkName: "Button"*/ "@/views/Buttons");
 
 Vue.use(VueRouter);
 

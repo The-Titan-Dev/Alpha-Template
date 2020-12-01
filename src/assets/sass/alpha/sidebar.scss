@@ -4,7 +4,7 @@
     position: fixed;
     width: 100%;
     top: 70px;
-
+    z-index: 99;
     &__menu {
         background: white;
         cursor: pointer;
