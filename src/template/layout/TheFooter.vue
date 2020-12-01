@@ -1,6 +1,6 @@
 <template>
   <footer>
-
+      ALPHA TEMPLATE Version 1 &#8482; ~ &#169; MIT 2020
   </footer>
 </template>
 
@@ -10,6 +10,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../../assets/sass/imports/general";
 
+footer{
+    width:100%;
+    height:auto;
+    background:$red;
+    color:white;
+    padding:10px;
+    font-size:13px;
+    text-align: center;
+}
 </style>
