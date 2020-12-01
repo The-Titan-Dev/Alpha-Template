@@ -1,0 +1,15 @@
+/*INPUT STYLES*/
+@import '../imports/general';
+.alpha-input {
+    border:1px solid $dark-gray;
+    border-radius:10px;
+    color:$black;
+    outline: $black;
+    padding:8px 10px 8px 10px;
+    transition:.5s;
+    width: 100%;
+}
+
+.alpha-input:hover{
+     @include box-shadow(0 0 8px 5px #edeef1);
+}

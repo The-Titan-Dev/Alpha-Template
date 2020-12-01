@@ -3,7 +3,7 @@
     <TheHeader></TheHeader>
     <TheSidebar></TheSidebar>
     <TheAside></TheAside>
-    <div class="AlphaContainer">
+    <div class="alpha__container">
       <router-view />
     </div>
     <TheFooter></TheFooter>
@@ -29,10 +29,11 @@ export default {
 <style  lang="scss">
 @import "../../assets/sass/imports/general";
 
-.AlphaContainer{
-    width:100%;
-    min-height:100vh;
-    padding:100px 30px 30px 30px;
-    z-index: 20;
+.alpha__container {
+  background: $container;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 30px 30px 30px;
+  z-index: 20;
 }
 </style>

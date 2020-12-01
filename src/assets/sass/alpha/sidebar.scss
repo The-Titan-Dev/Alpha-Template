@@ -5,6 +5,11 @@
     width: 100%;
     top: 70px;
     z-index: 99;
+
+    a {
+        text-decoration: none;
+    }
+
     &__menu {
         background: white;
         cursor: pointer;
@@ -14,7 +19,8 @@
         width: 250px;
 
         &__headline {
-            color: $red;
+            color: $black;
+            font-family: PoppinsSemiBold;
             font-size: 20px;
             padding: 15px 10px 0px 20px;
             width: 100%;
@@ -62,13 +68,13 @@
     opacity: 0;
 }
 
-.router-link-exact-active {
-    color: $red !important;
+// .router-link-exact-active {
+//     color: $red !important;
 
-    .icon {
-        color: $red !important;
-    }
-}
+//     .icon {
+//         color: $red !important;
+//     }
+// }
 
 .sidebar-sub-slide-enter-active {
     transition: all .5s ease;

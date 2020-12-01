@@ -1,6 +1,6 @@
 <template>
   <footer>
-      ALPHA TEMPLATE Version 1 &#8482; ~ &#169; MIT 2020
+      ALPHA TEMPLATE &#8482; ~ &#169; MIT 2020
   </footer>
 </template>
 

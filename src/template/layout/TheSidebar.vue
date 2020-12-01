@@ -13,6 +13,12 @@
             </router-link>
           </li>
           <li>
+            <router-link to="/input" class="item__link">
+              <font-awesome-icon icon="grip-lines" size="sm" class="icon" />
+              Inputs
+            </router-link>
+          </li>
+          <!-- <li>
             <a>
               <font-awesome-icon icon="columns" size="sm" class="icon" />
               Form
@@ -84,7 +90,7 @@
                 </li>
               </ul>
             </transition>
-          </li>
+          </li> -->
         </ul>
       </div>
     </aside>
