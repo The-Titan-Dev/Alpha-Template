@@ -7,8 +7,8 @@ const TheContainer = () =>
 
 // Pages
 const Blank = () => import(/*webpackChunkName: "blank-page"*/ "@/views/Blank");
-const Buttons = () =>
-  import(/*webpackChunkName: "blank-page"*/ "@/views/Buttons");
+const Buttons = () =>import(/*webpackChunkName: "blank-page"*/ "@/views/Button");
+const Cards = () =>import(/*webpackChunkName: "Cards"*/ "@/views/Card");
 
 Vue.use(VueRouter);
 
@@ -27,6 +27,11 @@ const routes = [
         path: "/buttons",
         name: "Buttons",
         component: Buttons
+      },
+      {
+        path: "/cards",
+        name: "Cards",
+        component: Cards
       }
     ]
   }

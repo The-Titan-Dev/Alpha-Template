@@ -1,15 +1,15 @@
 $red:#A30B1A;
 $gray:#F2F3F7;
 $black:#463E3F;
-$light-red : #e24857;
-$green : #28ca5f;
-$light-green : #3ddd73;
-$orange : #E29C06;
-$light-orange : #f0aa14;
+$light-red : #d63343;
+$green : #20b451;
+$light-green : #4beb80;
+$orange : #e2aa31;
+$light-orange : #f5be47;
 $blue : #3698f3;
 $light-blue : rgb(58, 186, 245);
-
-
+$pink : #dd7474;
+$light-pink : #eca3a3;
 $menu__divider:#e4e4e4;
 $active__menu:#e4c2c5;
 
@@ -17,8 +17,8 @@ $active__menu:#e4c2c5;
 
 
 
-$primary : linear-gradient($light-red, #a02d2f);
-$primary-hover :linear-gradient($light-red,#a03d3d);
+$primary : linear-gradient($light-red, #e04151);
+$primary-hover :linear-gradient($light-red,#da3c4c);
 $primary-animate-border : $light-red, #ffcece;
 
 $success : linear-gradient($green, #309051);
