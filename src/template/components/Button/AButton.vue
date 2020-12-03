@@ -2,8 +2,14 @@
   <button
     @click="onclick_method"
     class="abtn"
-    :class="[size ? 'abtn--' + size : '', type ? 'abtn--' + type : '', disabled ? 'abtn--' + disabled : '']"
-  >
+    :class="[
+      size ? 'abtn--' + size : '', 
+      type ? 'abtn--' + type : '',
+      disabled ? 'abtn--' + disabled : '',
+      classname
+      ]"
+    :id="id ? id : ''"
+    >
     <span></span>
     <span></span>
     <span></span>
@@ -19,7 +25,9 @@ export default {
     onclick: String,
     size: String,
     type: String,
-    disabled : Boolean
+    disabled : Boolean,
+    classname : String,
+    id : String
   },
   methods: {
     onclick_method() {
