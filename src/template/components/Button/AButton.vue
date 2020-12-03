@@ -1,6 +1,6 @@
 <template>
   <button
-    @click="onclick_method"
+    :disabled = "disabled"
     class="abtn"
     :class="[
       size ? 'abtn--' + size : '', 
@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     onclick_method() {
-      this.$parent[this.onclick]();
+      // this.$parent[this.onclick]();
     },
   },
 };
@@ -51,7 +51,7 @@ export default {
   position: relative;
   transition: 0.3s;
 
-  &:hover {
+  &:hover:enabled {
     transform: scale(1.1);
 
     span:nth-child(1){
@@ -77,6 +77,10 @@ export default {
 
   &:focus{
     outline: 5px auto rgb(212, 212, 212);
+  }
+
+  &:disabled{
+      box-shadow: 0 0 3px #646464;
   }
 
   &--sm{
@@ -204,7 +208,7 @@ export default {
     }
   }
 
-  &--primary {
+  &--primary:enabled {
     background: $primary;
     border-color: rgb(224, 224, 224);
     color: rgb(255, 255, 255);
@@ -224,6 +228,11 @@ export default {
     &:hover {
       background: $primary-hover;
     }
+  }
+
+  &--primary:disabled{
+    background: $primary-disabled;
+    color: $gray;
   }
 
   &--success {
@@ -249,6 +258,11 @@ export default {
     }
   }
 
+  &--success:disabled{
+    background: $success-disabled;
+    color: $black;
+  }
+
   &--warning {
     background: $warning;
     border-color: rgb(224, 224, 224);
@@ -270,6 +284,11 @@ export default {
     &:hover {
       background: $warning-hover;
     }
+  }
+
+  &--warning:disabled{
+    background: $warning-disabled;
+    color: $black;
   }
 
   &--info {
@@ -294,6 +313,12 @@ export default {
       background: $info-hover;
     }
   }
+
+  &--info:disabled{
+    background: $info-disabled;
+    color: $black;
+  }
+  
 }
 
 @keyframes slideRight {

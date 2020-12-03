@@ -1,7 +1,7 @@
 <template>
     <div class="acards__title" :class="classname" :id="id">
         <div class="acards__icon" :class="type? 'acards__icon--' + type : ''">
-            <font-awesome-icon  :icon="fontawesome_icon"  />
+            <font-awesome-icon v-if="fontawesome_icon" :icon="fontawesome_icon"  />
         </div>
         <div class="acards__text">
             <slot></slot>

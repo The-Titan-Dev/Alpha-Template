@@ -33,17 +33,22 @@ $container:#eef2f3;
 $primary : linear-gradient($light-red, #e04151);
 $primary-hover :linear-gradient($light-red,#da3c4c);
 $primary-animate-border : $light-red, #ffcece;
+$primary-disabled :linear-gradient(#f17a86,#f17a86);
+
 
 $success : linear-gradient($green, #309051);
 $success-hover :linear-gradient($light-green,#309051);
 $success-animate-border : $light-green, #ceffdd;
+$success-disabled :linear-gradient(#7af181,#82f17a);
 
 
 $warning : linear-gradient($orange, #e29c06);
 $warning-hover :linear-gradient($light-orange,#d19526);
 $warning-animate-border : $light-orange, #ffebce;
+$warning-disabled :linear-gradient(#f1bd7a,#f1d17a);
 
 $info : linear-gradient($blue, #1e87e9);
 $info-hover :linear-gradient($light-blue,#3a98f0);
 $info-animate-border : $light-blue, #cedfff;
+$info-disabled :linear-gradient(#7ab1f1,#7ab1f1);
 
