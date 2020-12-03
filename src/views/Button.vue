@@ -4,7 +4,7 @@
       <h1>INITIAL DESIGN AND COLOR</h1>
       <div>
         <span style="margin-right: 10px;"><b>DEFAULT</b></span>
-        <AButton onclick="doSomething">NORMAL</AButton>
+        <AButton onclick="doSomething" classname = "testclass" id="testid">NORMAL</AButton>
         <AButton onclick="doSomething" size="sm">SMALL</AButton>
         <AButton onclick="doSomething" size="md">MEDIUM</AButton>
         <AButton onclick="doSomething" size="lg">
@@ -38,6 +38,15 @@
         LARGE
         </AButton>
       </div>
+      <div>
+        <span style="margin-right: 10px;"><b>WARNING</b></span>
+        <AButton onclick="doSomething" type="warning">NORMAL</AButton>
+        <AButton onclick="doSomething" size="sm" type="warning">SMALL</AButton>
+        <AButton onclick="doSomething" size="md" type="warning">MEDIUM</AButton>
+        <AButton onclick="doSomething" size="lg" type="warning">
+        LARGE
+        </AButton>
+      </div>
       <br>
       <label>Button Props</label>
       <br>
@@ -49,6 +58,12 @@
        <br>
       <label style="font-weight: bold">onclick : </label>
       <label>your_method_name</label>
+       <br>
+      <label style="font-weight: bold">classname : </label>
+      <label>your_class_name</label>
+       <br>
+      <label style="font-weight: bold">id : </label>
+      <label>your_id</label>
     </div>
   </div>
 </template>

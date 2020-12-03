@@ -5,8 +5,9 @@ import VueRouter from "vue-router";
 const TheContainer = () => import(/*webpackChunkName: "layout"*/ "@/template/layout/TheContainer");
 // Pages
 const Blank     = () => import(/*webpackChunkName: "blank-page"*/"@/views/Blank");
-const Buttons   = () => import(/*webpackChunkName: "Button"*/"@/views/Buttons");
+const Buttons   = () => import(/*webpackChunkName: "Button"*/"@/views/Button");
 const Input     = () => import(/*webpackChunkName: "Input"*/"@/views/Alpha/Input");
+const Cards = () =>import(/*webpackChunkName: "Card"*/ "@/views/Card");
 
 Vue.use(VueRouter);
 
@@ -31,6 +32,11 @@ const routes = [
 				name: "input",
 				component: Input,
 			},
+			{
+				path: "/cards",
+				name: "Cards",
+				component: Cards
+			  }
 		],
 	},
 ];
