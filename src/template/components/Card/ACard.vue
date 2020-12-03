@@ -71,7 +71,7 @@ export default {
 </script>
 
 <style lang="scss">
-    @import "../../../assets/sass/imports/general";
+    @import "../../assets/sass/imports/general";
     .acards{
         background-color: white;
         border-style: solid;

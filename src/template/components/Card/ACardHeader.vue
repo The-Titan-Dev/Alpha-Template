@@ -24,7 +24,7 @@ export default {
 
 
 <style lang="scss">
-@import "../../../assets/sass/imports/general";
+@import "../../assets/sass/imports/general";
 
 .acards__title{
     border-radius: 10px 10px 0px 0px;
