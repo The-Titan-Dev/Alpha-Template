@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../assets/sass/imports/general";
+@import "../assets/sass/imports/general";
 
 footer{
     width:100%;

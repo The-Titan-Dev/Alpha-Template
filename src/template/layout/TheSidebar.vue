@@ -111,6 +111,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../assets/sass/imports/general";
-@import "../../assets/sass/alpha/sidebar.scss";
+@import "../assets/sass/alpha/sidebar.scss";
 </style>

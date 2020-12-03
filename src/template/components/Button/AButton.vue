@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../../assets/sass/imports/general";
+@import "../../assets/sass/imports/general";
 
 .abtn {
   border-radius: 5px;

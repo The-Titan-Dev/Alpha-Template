@@ -19,8 +19,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(faUser,faInfoCircle,faBars,faAddressCard,faInfo,faAngleRight,faAngleDown,faClipboardList,faRing,faClone,faColumns,
 faChartArea,faChartPie,faChartLine,faChartBar,faSignOutAlt,faEnvelope,faWindowClose,faComments,faQuestion,faEdit,faBell,faGripLines)
  
-
-
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 /*VESSEL COMPONENT*/
@@ -32,7 +30,7 @@ Vue.component('vessel-body', VesselBody)
 Vue.component('vessel-header', VesselHeader)
 
 /*TEMPLATE CSS*/
-import "./assets/sass/alpha/alpha.scss";
+import "./template/assets/sass/alpha/alpha.scss";
 
 new Vue({
   router,

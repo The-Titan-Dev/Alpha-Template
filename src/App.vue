@@ -7,5 +7,5 @@ export default {
 };
 </script>
 <style lang="scss">
-@import "assets/sass/imports/fonts";
+@import "template/assets/sass/imports/fonts";
 </style>

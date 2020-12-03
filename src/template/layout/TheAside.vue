@@ -14,7 +14,7 @@
       <div class="profile__user">
         <img
           class="profile__image"
-          :src="require('../../assets/images/avat.jpg')"
+          :src="require('../assets/images/avat.jpg')"
         />
         <div class="profile__user_info ml-2">
           <label class="user__name mb-0"> John Doe </label>
@@ -89,6 +89,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../assets/sass/imports/general";
-@import "../../assets/sass/alpha/profile.scss";
+@import "../assets/sass/alpha/profile.scss";
 </style>

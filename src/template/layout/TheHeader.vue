@@ -6,7 +6,7 @@
         <font-awesome-icon class="mt-2 mr-3" icon="bars" size="lg" />
       </span>
       <!-- TEMPLATE LOGO -->
-      <img src="../../assets/images/Fujitsu-Logo.png" class="nav__logo" />
+      <img src="../assets/images/Fujitsu-Logo.png" class="nav__logo" />
       <!-- NAVIGATION MENU -->
       <div class="nav__menus">
         <ul class="menu__default">
@@ -95,6 +95,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../assets/sass/imports/general";
-@import "../../assets/sass/alpha/header.scss";
+@import "../assets/sass/alpha/header.scss";
 </style>

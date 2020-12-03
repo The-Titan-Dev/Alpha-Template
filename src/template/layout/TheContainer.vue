@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style  lang="scss">
-@import "../../assets/sass/imports/general";
+@import "../assets/sass/imports/general";
 
 .alpha__container {
   background: $container;

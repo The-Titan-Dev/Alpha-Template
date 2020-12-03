@@ -3,7 +3,7 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
-import alpha from './modules/alpha'
+import alpha from '../template/modules/alpha'
 
 export default new Vuex.Store({
   state: {
