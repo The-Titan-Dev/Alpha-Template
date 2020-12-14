@@ -1,6 +1,6 @@
 <template>
   <button
-    :disabled = "disabled"
+    :disabled="disabled"
     class="abtn"
     :class="[
       size ? 'abtn--' + size : '', 
@@ -25,7 +25,7 @@ export default {
     onclick: String,
     size: String,
     type: String,
-    disabled : Boolean,
+    disabled : String,
     classname : String,
     id : String
   },
@@ -81,6 +81,7 @@ export default {
 
   &:disabled{
       box-shadow: 0 0 3px #646464;
+      cursor: no-drop;
   }
 
   &--sm{
@@ -208,7 +209,7 @@ export default {
     }
   }
 
-  &--primary:enabled {
+  &--primary {
     background: $primary;
     border-color: rgb(224, 224, 224);
     color: rgb(255, 255, 255);
