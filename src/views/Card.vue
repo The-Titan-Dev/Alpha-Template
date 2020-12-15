@@ -1,86 +1,121 @@
 <template>
-<div style="margin: 10px;">
-  <b>DEFAULT</b>
-  <div style=" width: 100%; display: inline-flex;">
+  <div style="margin: 10px;">
+    <b>DEFAULT</b>
+    <div style=" width: 100%; display: inline-flex;">
       <ACard width="400px" classname="test" id="testID" radius="0px">
         <ACardHeader fontawesome_icon="address-card">
-            Sample Primary
+          Sample Primary
         </ACardHeader>
         <ACardBody>
-            Some quick example text to build on the card title and make up the bulk of the card's content.123123
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.123123
         </ACardBody>
-         <ACardFooter>
-           <AButton size="md" type="primary">SUBMIT</AButton>
+        <ACardFooter>
+          <AButton size="md" type="primary">SUBMIT</AButton>
         </ACardFooter>
       </ACard>
-  </div>
+    </div>
 
-  <b>type [primary,success,info,warning,]</b>
-  <div style="width: 100%; display: inline-flex">
-      <ACard type="primary" classname="test" id="testID" radius="20px" width="400px" >
-        <ACardHeader  fontawesome_icon="user">
-            Sample Primary
+    <b>type [primary,success,info,warning,]</b>
+    <div style="width: 100%; display: inline-flex">
+      <ACard
+        type="primary"
+        classname="test"
+        id="testID"
+        radius="20px"
+        width="400px"
+      >
+        <ACardHeader fontawesome_icon="user">
+          Sample Primary
         </ACardHeader>
         <ACardBody>
-            Some quick example text to build on the card title and make up the bulk of the card's content.123123
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.123123
         </ACardBody>
-         <ACardFooter>
-           <AButton size="md" type="primary">SUBMIT</AButton>
-        </ACardFooter>
-      </ACard>
-
-      <ACard type="info" classname="test" id="testID" radius="20px" width="400px" >
-        <ACardHeader  fontawesome_icon="user">
-            Sample Primary
-        </ACardHeader>
-        <ACardBody>
-            Some quick example text to build on the card title and make up the bulk of the card's content.123123
-        </ACardBody>
-         <ACardFooter>
-           <AButton size="md" type="info">SUBMIT</AButton>
+        <ACardFooter>
+          <AButton size="md" type="primary">SUBMIT</AButton>
         </ACardFooter>
       </ACard>
 
-      <ACard type="success" classname="test" id="testID" radius="20px" width="400px" >
-        <ACardHeader  fontawesome_icon="user">
-            Sample Primary
+      <ACard
+        type="info"
+        classname="test"
+        id="testID"
+        radius="20px"
+        width="400px"
+      >
+        <ACardHeader fontawesome_icon="user">
+          Sample Primary
         </ACardHeader>
         <ACardBody>
-            Some quick example text to build on the card title and make up the bulk of the card's content.123123
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.123123
         </ACardBody>
-         <ACardFooter>
-           <AButton size="md" type="success">SUBMIT</AButton>
+        <ACardFooter>
+          <AButton size="md" type="info">SUBMIT</AButton>
         </ACardFooter>
       </ACard>
 
-      <ACard type="warning" classname="test" id="testID" radius="20px" width="400px" >
-        <ACardHeader  fontawesome_icon="user">
-            Sample Primary
+      <ACard
+        type="success"
+        classname="test"
+        id="testID"
+        radius="20px"
+        width="400px"
+      >
+        <ACardHeader fontawesome_icon="user">
+          Sample Primary
         </ACardHeader>
         <ACardBody>
-            Some quick example text to build on the card title and make up the bulk of the card's content.123123
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.123123
         </ACardBody>
-         <ACardFooter>
-           <AButton size="md" type="warning">SUBMIT</AButton>
+        <ACardFooter>
+          <AButton size="md" type="success">SUBMIT</AButton>
         </ACardFooter>
       </ACard>
-  </div>
-  
- 
+
+      <ACard
+        type="warning"
+        classname="test"
+        id="testID"
+        radius="20px"
+        width="400px"
+      >
+        <ACardHeader fontawesome_icon="user">
+          Sample Primary
+        </ACardHeader>
+        <ACardBody>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.123123
+        </ACardBody>
+        <ACardFooter>
+          <AButton size="md" type="warning">SUBMIT</AButton>
+        </ACardFooter>
+      </ACard>
+    </div>
+
     <div>
-       <ACard classname="test" id="testID" radius="0px">
+      <ACard classname="test" id="testID" radius="0px">
         <ACardHeader fontawesome_icon="address-card">
-           CODE
+          CODE
         </ACardHeader>
         <ACardBody>
-            <span style="color: blue">&lt;ACard&gt;</span><br>
-            <span style="color: blue">&lt;ACardHeader&gt;</span>Your_Header<span style="color: blue">&lt;/ACardHeader&gt;</span><br>
-            <span style="color: blue">&lt;ACardBody&gt;</span>Card_Details_Body<span style="color: blue">&lt;/ACardBody&gt;</span><br>
-            <span style="color: blue">&lt;ACardFooter&gt;</span>Your_Footer<span style="color: blue">&lt;/ACardFooter&gt;</span><br>
-            <span style="color: blue">&lt;/ACard&gt;</span><br>
+          <span style="color: blue">&lt;ACard&gt;</span><br />
+          <span style="color: blue">&lt;ACardHeader&gt;</span>Your_Header<span
+            style="color: blue"
+            >&lt;/ACardHeader&gt;</span
+          ><br />
+          <span style="color: blue">&lt;ACardBody&gt;</span
+          >Card_Details_Body<span style="color: blue">&lt;/ACardBody&gt;</span
+          ><br />
+          <span style="color: blue">&lt;ACardFooter&gt;</span>Your_Footer<span
+            style="color: blue"
+            >&lt;/ACardFooter&gt;</span
+          ><br />
+          <span style="color: blue">&lt;/ACard&gt;</span><br />
 
-
-            <pre>
+          <pre>
             <b>PROPS</b>
             <b>ACard =>  </b>
             [
@@ -102,24 +137,20 @@
             </pre>
         </ACardBody>
       </ACard>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
-
-
 export default {
   name: "Cards"
 };
 </script>
 
 <style>
-  /* .test{
+/* .test{
     color: red;
     background-image: url(../assets/logo.png) !important;
     background-size : contain;
   } */
 </style>
-
-

@@ -20,10 +20,10 @@
         width: 250px;
 
         &__headline {
-            color: $black;
+            color: $red;
             font-family: PoppinsSemiBold;
             font-size: 20px;
-            padding: 15px 10px 0px 20px;
+            padding: 15px 10px 0px 15px;
             width: 100%;
         }
 
@@ -35,7 +35,8 @@
         &__item {
 
             li {
-                padding: 10px 0px 10px 20px;
+                padding: 8px 0px 8px 15px;
+                font-size:15px;
             }
 
             ul {
@@ -46,7 +47,7 @@
 }
 
 .icon {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .sidebar__submenu {
@@ -68,14 +69,6 @@
     // transform-origin: top;
     opacity: 0;
 }
-
-// .router-link-exact-active {
-//     color: $red !important;
-
-//     .icon {
-//         color: $red !important;
-//     }
-// }
 
 .sidebar-sub-slide-enter-active {
     transition: all .5s ease;

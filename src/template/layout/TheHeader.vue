@@ -10,17 +10,16 @@
       <!-- NAVIGATION MENU -->
       <div class="nav__menus">
         <ul class="menu__default">
-          <li class="menu__default__item"><router-link to="/" class="item__link">Home</router-link></li>
-          <li
-            class="menu__default__item"
-            @click="setDDMenuVisibility"
-          >
+          <li class="menu__default__item">
+            <router-link to="/" class="item__link">Home</router-link>
+          </li>
+          <li class="menu__default__item" @click="setDDMenuVisibility">
             <span class="item__link">Main Menu</span>
             <font-awesome-icon
               class="anchor ml-2"
               icon="angle-right"
               size="sm"
-              :class="{'anchor--down':getShowDDMenuStatus}"
+              :class="{ 'anchor--down': getShowDDMenuStatus }"
             />
             <transition name="dropdown-menu-slide">
               <div class="dropdown dropdown--full" v-if="getShowDDMenuStatus">
@@ -59,8 +58,12 @@
               </div>
             </transition>
           </li>
-          <li class="menu__default__item"><router-link to="/blank" class="item__link">Reports</router-link></li>
-          <li class="menu__default__item"><router-link to="/" class="item__link">About</router-link></li>
+          <li class="menu__default__item">
+            <router-link to="/blank" class="item__link">Reports</router-link>
+          </li>
+          <li class="menu__default__item">
+            <router-link to="/" class="item__link">About</router-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -86,11 +89,15 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: "TheHeader",
   methods: {
-    ...mapActions(["setProfileVisibility", "setDDMenuVisibility","setSidebarVisibility"]),
+    ...mapActions([
+      "setProfileVisibility",
+      "setDDMenuVisibility",
+      "setSidebarVisibility"
+    ])
   },
   computed: {
-    ...mapGetters(["getShowDDMenuStatus"]),
-  },
+    ...mapGetters(["getShowDDMenuStatus"])
+  }
 };
 </script>
 
