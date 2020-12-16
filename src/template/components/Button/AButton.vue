@@ -6,7 +6,6 @@
     :class="[
       size ? 'abtn--' + size : '', 
       variant ? 'abtn--' + variant : '',
-      disabled ? 'abtn--' + disabled : '',
       classname
       ]"
     :id="id"
@@ -54,6 +53,7 @@ export default {
   transition: 0.3s;
   padding: .375rem .75rem;
   font-size: 1rem;
+  color: $black;
 
   &:hover:enabled {
     transform: scale(1.1);
