@@ -7,15 +7,15 @@
           <ACardBody>
               <b-row style="text-align:center">
                 <b-col><AButton v-on:click.native="doSomething">NORMAL</AButton></b-col>
-                <b-col><AButton v-on:click.native="doSomething" size="sm">SMALL</AButton></b-col>
-                <b-col><AButton v-on:click.native="doSomething" size="md">MEDIUM</AButton></b-col>
+                <b-col><AButton v-on:click.native="doSomething" size="sm">Small Button</AButton></b-col>
+                <b-col><AButton v-on:click.native="doSomething" size="md">Default Button</AButton></b-col>
                 <b-col>
                       <AButton v-on:click.native="doSomething" size="lg">
-                      LARGE
+                      Large Button
                       </AButton>
                 </b-col>
               </b-row>
-              <b-row style="text-align:center">
+              <b-row style="text-align:center; margin-top: 10px">
                 <b-col><AButton v-on:click.native="doSomething" disabled=true>NORMAL</AButton></b-col>
                 <b-col><AButton v-on:click.native="doSomething" size="sm" disabled=true>SMALL</AButton></b-col>
                 <b-col><AButton v-on:click.native="doSomething" size="md" disabled=true>MEDIUM</AButton></b-col>
@@ -33,7 +33,7 @@
          <ACard>
           <ACardHeader>PRIMARY</ACardHeader>
           <ACardBody>
-             <b-row style="text-align:center">
+             <b-row style="text-align:center;">
                 <b-col><AButton :click="doSomething" type="primary">NORMAL</AButton></b-col>
                 <b-col><AButton v-on:click.native="doSomething" size="sm" type="primary">SMALL</AButton></b-col>
                 <b-col><AButton v-on:click.native="doSomething" size="md" type="primary">MEDIUM</AButton></b-col>
@@ -43,6 +43,7 @@
                       </AButton>
                 </b-col>
               </b-row>
+              <br>
              <b-row style="text-align:center">
                 <b-col><AButton :click="doSomething" type="primary"  disabled=true>NORMAL</AButton></b-col>
                 <b-col><AButton v-on:click.native="doSomething" size="sm" type="primary"  disabled=true>SMALL</AButton></b-col>
@@ -72,6 +73,7 @@
                       </AButton>
                 </b-col>
               </b-row>
+              <br>
              <b-row style="text-align:center">
                 <b-col><AButton v-on:click.native="doSomething" type="success" disabled=true>NORMAL</AButton></b-col>
                 <b-col><AButton v-on:click.native="doSomething" size="sm" type="success" disabled=true>SMALL</AButton></b-col>
@@ -99,6 +101,7 @@
                       </AButton>
                 </b-col>
               </b-row>
+              <br>
                <b-row style="text-align:center">
                 <b-col><AButton  v-on:click.native="doSomething" type="info"  disabled=true>NORMAL</AButton></b-col>
                 <b-col><AButton v-on:click.native="doSomething" size="sm" type="info"  disabled=true>SMALL</AButton></b-col>
@@ -126,6 +129,7 @@
                       </AButton>
                 </b-col>
               </b-row>
+              <br>
                <b-row style="text-align:center">
                 <b-col><AButton v-on:click.native="doSomething" type="warning" disabled=true>NORMAL</AButton></b-col>
                 <b-col><AButton v-on:click.native="doSomething" size="sm" type="warning" disabled=true>SMALL</AButton></b-col>
