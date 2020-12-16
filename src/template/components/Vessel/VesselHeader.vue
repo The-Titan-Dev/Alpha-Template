@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "VesselHeader",
+  name: "VesselHeader"
 };
 </script>
 

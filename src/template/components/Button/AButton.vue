@@ -34,8 +34,8 @@ export default {
   methods: {
     onclick_method() {
       // this.$parent[this.onclick]();
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -58,21 +58,21 @@ export default {
   &:hover:enabled {
     transform: scale(1.1);
 
-    span:nth-child(1){
+    span:nth-child(1) {
       left: 100%;
       transition: 0.8s;
     }
-    span:nth-child(2){
+    span:nth-child(2) {
       top: 100%;
       transition: 0.8s;
       transition-delay: 0.2s;
     }
-    span:nth-child(3){
+    span:nth-child(3) {
       right: 100%;
       transition: 0.8s;
       transition-delay: 0.5s;
     }
-    span:nth-child(4){
+    span:nth-child(4) {
       bottom: 99%;
       transition: 0.8s;
       transition-delay: 0.7s;
@@ -83,9 +83,9 @@ export default {
     outline: none;
   }
 
-  &:disabled{
-      box-shadow: 0 0 3px #646464;
-      cursor: no-drop;
+  &:disabled {
+    box-shadow: 0 0 3px #646464;
+    cursor: no-drop;
   }
 
   &--sm{
@@ -93,7 +93,7 @@ export default {
     // line-height: 1.5;
     padding: .25rem .5rem;
 
-    span:nth-child(1){
+    span:nth-child(1) {
       height: 2px;
       left: -200%;
       position: absolute;
@@ -103,7 +103,7 @@ export default {
       width: 100px;
     }
 
-    span:nth-child(2){
+    span:nth-child(2) {
       height: 100px;
       position: absolute;
       right: 0%;
@@ -112,7 +112,7 @@ export default {
       transition-delay: 0.5s;
       width: 2px;
     }
-    span:nth-child(3){
+    span:nth-child(3) {
       bottom: 0%;
       height: 2px;
       position: absolute;
@@ -121,7 +121,7 @@ export default {
       transition-delay: 0.2s;
       width: 100px;
     }
-    span:nth-child(4){
+    span:nth-child(4) {
       bottom: -450%;
       height: 100px;
       left: 0%;
@@ -144,7 +144,7 @@ export default {
       width: 100px;
     }
 
-    span:nth-child(2){
+    span:nth-child(2) {
       height: 100px;
       position: absolute;
       right: 0%;
@@ -153,7 +153,7 @@ export default {
       transition-delay: 0.5s;
       width: 2px;
     }
-    span:nth-child(3){
+    span:nth-child(3) {
       bottom: 0%;
       height: 2px;
       position: absolute;
@@ -162,7 +162,7 @@ export default {
       transition-delay: 0.2s;
       width: 100px;
     }
-    span:nth-child(4){
+    span:nth-child(4) {
       bottom: -340%;
       height: 100px;
       left: 0%;
@@ -176,7 +176,8 @@ export default {
     padding: .5rem 1rem;
     font-size: 1.25rem;
 
-    span:nth-child(1){
+
+    span:nth-child(1) {
       height: 2px;
       left: -110%;
       position: absolute;
@@ -185,7 +186,7 @@ export default {
       transition-delay: 0.7s;
       width: 100px;
     }
-    span:nth-child(2){
+    span:nth-child(2) {
       height: 100px;
       position: absolute;
       right: 0%;
@@ -194,7 +195,7 @@ export default {
       transition-delay: 0.5s;
       width: 2px;
     }
-    span:nth-child(3){
+    span:nth-child(3) {
       bottom: 0%;
       height: 2px;
       position: absolute;
@@ -203,7 +204,7 @@ export default {
       transition-delay: 0.2s;
       width: 100px;
     }
-    span:nth-child(4){
+    span:nth-child(4) {
       bottom: -250%;
       height: 100px;
       left: 0%;
@@ -218,24 +219,28 @@ export default {
     // border-color: rgb(224, 224, 224);
     color: rgb(255, 255, 255);
 
-    span:nth-child(1){
-       background: linear-gradient(to left, $primary-animate-border, #ffffff00);
+    span:nth-child(1) {
+      background: linear-gradient(to left, $primary-animate-border, #ffffff00);
     }
-    span:nth-child(2){
-       background: linear-gradient(to top, $primary-animate-border, #ffffff00);
+    span:nth-child(2) {
+      background: linear-gradient(to top, $primary-animate-border, #ffffff00);
     }
-    span:nth-child(3){
-       background: linear-gradient(to right, $primary-animate-border, #ffffff00);
+    span:nth-child(3) {
+      background: linear-gradient(to right, $primary-animate-border, #ffffff00);
     }
-    span:nth-child(4){
-       background: linear-gradient(to bottom, $primary-animate-border, #ffffff00);
+    span:nth-child(4) {
+      background: linear-gradient(
+        to bottom,
+        $primary-animate-border,
+        #ffffff00
+      );
     }
     &:hover {
       background: $primary-hover;
     }
   }
 
-  &--primary:disabled{
+  &--primary:disabled {
     background: $primary-disabled;
     color: $gray;
   }
@@ -245,17 +250,21 @@ export default {
     border-color: rgb(224, 224, 224);
     color: rgb(255, 255, 255);
 
-    span:nth-child(1){
-       background: linear-gradient(to left, $success-animate-border, #ffffff00);
+    span:nth-child(1) {
+      background: linear-gradient(to left, $success-animate-border, #ffffff00);
     }
-    span:nth-child(2){
-       background: linear-gradient(to top, $success-animate-border, #ffffff00);
+    span:nth-child(2) {
+      background: linear-gradient(to top, $success-animate-border, #ffffff00);
     }
-    span:nth-child(3){
-       background: linear-gradient(to right, $success-animate-border, #ffffff00);
+    span:nth-child(3) {
+      background: linear-gradient(to right, $success-animate-border, #ffffff00);
     }
-    span:nth-child(4){
-       background: linear-gradient(to bottom, $success-animate-border, #ffffff00);
+    span:nth-child(4) {
+      background: linear-gradient(
+        to bottom,
+        $success-animate-border,
+        #ffffff00
+      );
     }
 
     &:hover {
@@ -263,7 +272,7 @@ export default {
     }
   }
 
-  &--success:disabled{
+  &--success:disabled {
     background: $success-disabled;
     color: $black;
   }
@@ -273,17 +282,21 @@ export default {
     border-color: rgb(224, 224, 224);
     color: rgb(48, 47, 42);
 
-    span:nth-child(1){
-       background: linear-gradient(to left, $warning-animate-border, #ffffff00);
+    span:nth-child(1) {
+      background: linear-gradient(to left, $warning-animate-border, #ffffff00);
     }
-    span:nth-child(2){
-       background: linear-gradient(to top, $warning-animate-border, #ffffff00);
+    span:nth-child(2) {
+      background: linear-gradient(to top, $warning-animate-border, #ffffff00);
     }
-    span:nth-child(3){
-       background: linear-gradient(to right, $warning-animate-border, #ffffff00);
+    span:nth-child(3) {
+      background: linear-gradient(to right, $warning-animate-border, #ffffff00);
     }
-    span:nth-child(4){
-       background: linear-gradient(to bottom, $warning-animate-border, #ffffff00);
+    span:nth-child(4) {
+      background: linear-gradient(
+        to bottom,
+        $warning-animate-border,
+        #ffffff00
+      );
     }
 
     &:hover {
@@ -291,7 +304,7 @@ export default {
     }
   }
 
-  &--warning:disabled{
+  &--warning:disabled {
     background: $warning-disabled;
     color: $black;
   }
@@ -301,17 +314,17 @@ export default {
     border-color: rgb(224, 224, 224);
     color: rgb(255, 255, 255);
 
-    span:nth-child(1){
-       background: linear-gradient(to left, $info-animate-border, #ffffff00);
+    span:nth-child(1) {
+      background: linear-gradient(to left, $info-animate-border, #ffffff00);
     }
-    span:nth-child(2){
-       background: linear-gradient(to top, $info-animate-border, #ffffff00);
+    span:nth-child(2) {
+      background: linear-gradient(to top, $info-animate-border, #ffffff00);
     }
-    span:nth-child(3){
-       background: linear-gradient(to right, $info-animate-border, #ffffff00);
+    span:nth-child(3) {
+      background: linear-gradient(to right, $info-animate-border, #ffffff00);
     }
-    span:nth-child(4){
-       background: linear-gradient(to bottom, $info-animate-border, #ffffff00);
+    span:nth-child(4) {
+      background: linear-gradient(to bottom, $info-animate-border, #ffffff00);
     }
 
     &:hover {
@@ -319,11 +332,10 @@ export default {
     }
   }
 
-  &--info:disabled{
+  &--info:disabled {
     background: $info-disabled;
     color: $black;
   }
-  
 }
 
 @keyframes slideRight {

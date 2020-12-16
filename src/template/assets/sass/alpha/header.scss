@@ -37,7 +37,7 @@ header {
     color: $black;
     cursor: pointer;
     padding: 16px;
-    text-align: center;
+    text-align: left;
     transition: .5s;
 
     a {
@@ -48,6 +48,7 @@ header {
 .item__link {
     color: $black;
     text-decoration: none;
+    // font-size:14px;
     // transition: 1s;
 }
 
@@ -94,9 +95,9 @@ header {
         list-style-type: none;
         margin: 20px;
         margin-top: 40px;
-        padding: 0 50px 0 50px;
-        border-right: 1px solid $menu__divider;
-        border-left: 1px solid $menu__divider;
+        padding: 0 20px 0 20px;
+        // border-right: 1px solid $menu__divider;
+        // border-left: 1px solid $menu__divider;
     }
 
     &__item {
@@ -117,7 +118,8 @@ header {
         color: $red;
         font-size: 20px;
         font-weight: bold;
-        padding: 5px 10px 5px 10px;
+        padding: 5px;
+        // padding: 5px 10px 5px 10px;
     }
 
     &--active {

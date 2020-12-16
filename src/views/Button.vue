@@ -165,10 +165,10 @@
               <span style="color:blue">&lt;AButton v-on:click.native="doSomething" size="lg" variant="info" disabled&gt;</span>
               it is important to use :click.native on created methods to allow click events in components.
             </pre>
-          </ACardBody>
-        </ACard>
-      <br>
-    </div>
+      </ACardBody>
+    </ACard>
+    <br />
+  </div>
 </template>
 
 <script>
@@ -181,5 +181,3 @@ export default {
   }
 };
 </script>
-
-

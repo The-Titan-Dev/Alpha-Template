@@ -2,12 +2,12 @@
   <transition name="slide-fade">
     <aside class="profile" v-if="showProfile">
       <span class="profile__closeBtn" @click="setProfileVisibility">
-      <font-awesome-icon
-        icon="window-close"
-        class="mr-3 mt-2 prime"
-        pull="right"
-        size="2x"
-      />
+        <font-awesome-icon
+          icon="window-close"
+          class="mr-3 mt-2 prime"
+          pull="right"
+          size="2x"
+        />
       </span>
       <label class="profile__title">USER INFORMATION </label>
 
@@ -74,17 +74,17 @@
 </template>
 
 <script>
-import { mapActions , mapGetters } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 export default {
   name: "TheAside",
   methods: {
-    ...mapActions(["setProfileVisibility"]),
+    ...mapActions(["setProfileVisibility"])
   },
   computed: {
     ...mapGetters({
-      showProfile: "getShowProfileStatus",
-    }),
-  },
+      showProfile: "getShowProfileStatus"
+    })
+  }
 };
 </script>
 

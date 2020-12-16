@@ -102,11 +102,11 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: "TheSidebar",
   methods: {
-    ...mapActions(["setSidebarVisibility", "setSidebarSubMenuVisibility"]),
+    ...mapActions(["setSidebarVisibility", "setSidebarSubMenuVisibility"])
   },
   computed: {
-    ...mapGetters(["getShowSidebarStatus", "getShowSidebarSubMenuStatus"]),
-  },
+    ...mapGetters(["getShowSidebarStatus", "getShowSidebarSubMenuStatus"])
+  }
 };
 </script>
 

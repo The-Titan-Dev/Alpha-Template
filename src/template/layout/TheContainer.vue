@@ -21,12 +21,12 @@ export default {
     TheHeader,
     TheSidebar,
     TheAside,
-    TheFooter,
-  },
+    TheFooter
+  }
 };
 </script>
 
-<style  lang="scss">
+<style lang="scss">
 @import "../assets/sass/imports/general";
 
 .alpha__container {
