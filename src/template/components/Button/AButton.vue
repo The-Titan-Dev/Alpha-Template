@@ -1,14 +1,15 @@
 <template>
   <button
+    :type="type"
     :disabled="disabled"
     class="abtn"
     :class="[
       size ? 'abtn--' + size : '', 
-      type ? 'abtn--' + type : '',
+      variant ? 'abtn--' + variant : '',
       disabled ? 'abtn--' + disabled : '',
       classname
       ]"
-    :id="id ? id : ''"
+    :id="id"
     >
     <span></span>
     <span></span>
@@ -25,9 +26,10 @@ export default {
     onclick: String,
     size: String,
     type: String,
-    disabled : String,
+    disabled : Boolean,
     classname : String,
-    id : String
+    id : String,
+    variant : String
   },
   methods: {
     onclick_method() {

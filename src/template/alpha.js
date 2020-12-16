@@ -11,13 +11,30 @@ faChartArea,faChartPie,faChartLine,faChartBar,faSignOutAlt,faEnvelope,faWindowCl
  
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
-/*VESSEL COMPONENT*/
-// import Vessel from './template/components/Vessel/Vessel.vue'
-// import VesselBody from './template/components/Vessel/VesselBody.vue'
-// import VesselHeader from './template/components/Vessel/VesselHeader.vue'
-// Vue.component('vessel', Vessel)
-// Vue.component('vessel-body', VesselBody)
-// Vue.component('vessel-header', VesselHeader)
+import Toast, { POSITION, TYPE } from "vue-toastification";
+import "vue-toastification/dist/index.css";
+
+const options = {
+  // You can set your default options here
+  position: POSITION.TOP_RIGHT,
+  toastClassName: "my-custom-toast-class",
+  toastDefaults: {
+    // ToastOptions object for each type of toast
+    [TYPE.ERROR]: {
+        timeout: 10000,
+        closeButton: false,
+    },
+    [TYPE.SUCCESS]: {
+        timeout: 3000,
+        showCloseButtonOnHover: true
+    }    
+}
+
+};
+Vue.use(Toast, options);
+
+
+
 
 /*TEMPLATE CSS*/
 import "./assets/sass/alpha/alpha.scss";
@@ -36,13 +53,9 @@ const requireComponent = require.context(
 )
 // console.log(requireComponent.keys());
 requireComponent.keys().forEach(fileName => {
-  // Get component config
   const componentConfig = requireComponent(fileName)
-
-  // Get PascalCase name of component
   const componentName = upperFirst(
     camelCase(
-      // Gets the file name regardless of folder depth
       fileName
         .split('/')
         .pop()
@@ -55,5 +68,4 @@ requireComponent.keys().forEach(fileName => {
     componentConfig.default || componentConfig
   )
 })
-
 // AUTOMATIC GLOBAL REGISTRATION OF COMPONENTS -- END
