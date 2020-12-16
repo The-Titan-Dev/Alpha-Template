@@ -1,12 +1,12 @@
 <template>
   <div class="vessel">
-      <slot></slot>
+    <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Vessel",
+  name: "Vessel"
 };
 </script>
 
@@ -18,5 +18,4 @@ export default {
   border-radius: 10px;
   color: $black;
 }
-
 </style>
