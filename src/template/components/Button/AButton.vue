@@ -44,12 +44,14 @@ export default {
   border-radius: 5px;
   border-style: none;
   box-shadow: 0 0 5px #646464;
-  font-size: 14px;
-  margin: 4px;
+  // font-size: 14px;
+  // margin: 4px;
   overflow: hidden;
-  padding: 4px 14px;
+  // padding: 4px 14px;
   position: relative;
   transition: 0.3s;
+  padding: .375rem .75rem;
+  font-size: 1rem;
 
   &:hover:enabled {
     transform: scale(1.1);
@@ -75,8 +77,8 @@ export default {
     }
   }
 
-  &:focus {
-    outline: 5px auto rgb(212, 212, 212);
+  &:focus{
+    outline: none;
   }
 
   &:disabled {
@@ -84,9 +86,10 @@ export default {
     cursor: no-drop;
   }
 
-  &--sm {
-    font-size: 14px;
-    padding: 2px 7px;
+  &--sm{
+    font-size: .875rem;
+    // line-height: 1.5;
+    padding: .25rem .5rem;
 
     span:nth-child(1) {
       height: 2px;
@@ -127,10 +130,9 @@ export default {
   }
 
   &--md {
-    font-size: 16px;
-    padding: 4px 14px;
-
-    span:nth-child(1) {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    span:nth-child(1){
       height: 2px;
       left: -140%;
       position: absolute;
@@ -168,13 +170,14 @@ export default {
     }
   }
 
-  &--lg {
-    font-size: 22px;
-    padding: 5px 20px;
+  &--lg{
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+
 
     span:nth-child(1) {
       height: 2px;
-      left: -100%;
+      left: -110%;
       position: absolute;
       top: 0%;
       transition: 0.8s;
@@ -194,7 +197,7 @@ export default {
       bottom: 0%;
       height: 2px;
       position: absolute;
-      right: -100%;
+      right: -110%;
       transition: 0.8s;
       transition-delay: 0.2s;
       width: 100px;
@@ -211,7 +214,7 @@ export default {
 
   &--primary {
     background: $primary;
-    border-color: rgb(224, 224, 224);
+    // border-color: rgb(224, 224, 224);
     color: rgb(255, 255, 255);
 
     span:nth-child(1) {
