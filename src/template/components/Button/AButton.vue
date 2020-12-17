@@ -44,7 +44,7 @@ export default {
 .abtn {
   border-radius: 5px;
   border-style: none;
-  box-shadow: 0 0 5px #646464;
+  box-shadow: 0 0 1px #646464;
   // font-size: 14px;
   // margin: 4px;
   overflow: hidden;
@@ -95,7 +95,7 @@ export default {
 
     span:nth-child(1) {
       height: 2px;
-      left: -200%;
+      left: -240%;
       position: absolute;
       top: 0%;
       transition: 0.8s;
@@ -116,7 +116,7 @@ export default {
       bottom: 0%;
       height: 2px;
       position: absolute;
-      right: -200%;
+      right: -240%;
       transition: 0.8s;
       transition-delay: 0.2s;
       width: 100px;
@@ -136,7 +136,7 @@ export default {
     font-size: 1rem;
     span:nth-child(1){
       height: 2px;
-      left: -140%;
+      left: -240%;
       position: absolute;
       top: 0%;
       transition: 0.8s;
@@ -157,7 +157,7 @@ export default {
       bottom: 0%;
       height: 2px;
       position: absolute;
-      right: -140%;
+      right: -240%;
       transition: 0.8s;
       transition-delay: 0.2s;
       width: 100px;
@@ -179,7 +179,7 @@ export default {
 
     span:nth-child(1) {
       height: 2px;
-      left: -110%;
+      left: -240%;
       position: absolute;
       top: 0%;
       transition: 0.8s;
@@ -199,7 +199,7 @@ export default {
       bottom: 0%;
       height: 2px;
       position: absolute;
-      right: -110%;
+      right: -240%;
       transition: 0.8s;
       transition-delay: 0.2s;
       width: 100px;
