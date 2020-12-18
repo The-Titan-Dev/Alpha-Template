@@ -3,7 +3,7 @@
     class="acards"
     :style="{ width: width, 'border-radius': radius }"
     :class="[
-      type ? 'acards--' + type : '',
+      variant ? 'acards--' + variant : '',
       theme ? 'acards--' + theme : '',
       classname
     ]"
@@ -32,17 +32,17 @@ export default {
   name: "ACards",
   props: {
     classname: String,
-    type: String,
+    variant: String,
     id: String,
     width: String,
     theme: {
-      type: String,
+      variant: String,
       default: "default"
     },
     radius: String,
     img_src: String,
     img_position: {
-      type: String,
+      variant: String,
       default: "top"
     }
   },

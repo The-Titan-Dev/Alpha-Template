@@ -61,12 +61,7 @@ import "vue-toastification/dist/index.css";
 import "./assets/sass/alpha/toaster.scss";
 
 const options = {
-  position: POSITION.TOP_RIGHT,
-  transition: {
-    enter: "Vue-Toastification__bounce-enter-active",
-    leave: "Vue-Toastification__fade-leave-active",
-    move: "fade-move"
-  },
+  position: POSITION.BOTTOM_RIGHT,
   toastDefaults: {
     [TYPE.ERROR]: {
         timeout: 2000,

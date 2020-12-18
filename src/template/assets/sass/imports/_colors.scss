@@ -8,14 +8,11 @@ $gray__backdrop:rgba(97,97,97,0.8);
 
 //COMPONENTS
 $light-red : #e24857;
-$orange : #E29C06;
-$light-orange : #f0aa14;
+$orange : #ed8901;
+$light-orange : #c67405;
 $light-red : #d63343;
-$green : #20b451;
-$light-green : #4beb80;
-$lime-green : #1a8f41;
-$orange : #e2aa31;
-$light-orange : #f5be47;
+$green : #36aa5d;
+$light-green : #27954c;
 $blue : #3698f3;
 $light-blue : rgb(58, 186, 245);
 $pink : #dd7474;
@@ -35,14 +32,15 @@ $primary-animate-border : $light-red, #ffcece;
 $primary-disabled :linear-gradient(#f17a86,#f17a86);
 
 
-$success : linear-gradient($green, #309051);
-$success-hover :linear-gradient($light-green,#309051);
+// $success : linear-gradient($green, #3ebb67);
+$success : $green;
+$success-hover :$light-green;
 $success-animate-border : $light-green, #ceffdd;
 $success-disabled :linear-gradient(#7af181,#82f17a);
 
 
-$warning : linear-gradient($orange, #e29c06);
-$warning-hover :linear-gradient($light-orange,#d19526);
+$warning : $orange;
+$warning-hover : $light-orange;
 $warning-animate-border : $light-orange, #ffebce;
 $warning-disabled :linear-gradient(#f1bd7a,#f1d17a);
 

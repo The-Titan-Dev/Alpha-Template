@@ -44,7 +44,7 @@ export default {
 .abtn {
   border-radius: 5px;
   border-style: none;
-  box-shadow: 0 0 1px #646464;
+  box-shadow: 0 0 2px #646464;
   // font-size: 14px;
   // margin: 4px;
   overflow: hidden;
@@ -280,7 +280,7 @@ export default {
   &--warning {
     background: $warning;
     border-color: rgb(224, 224, 224);
-    color: rgb(48, 47, 42);
+    color: $gray;
 
     span:nth-child(1) {
       background: linear-gradient(to left, $warning-animate-border, #ffffff00);
