@@ -18,13 +18,13 @@
               Inputs
             </router-link>
           </li>
-          <!-- <li>
-            <a>
-              <font-awesome-icon icon="columns" size="sm" class="icon" />
-              Form
-            </a>
-          </li>
           <li>
+            <router-link to="/overlay" class="item__link">
+              <font-awesome-icon icon="columns" size="sm" class="icon" />
+              Overlay
+            </router-link>
+          </li>
+          <!-- <li>
             <a>
               <font-awesome-icon icon="clone" size="sm" class="icon" />
               Cards
@@ -90,7 +90,7 @@
                 </li>
               </ul>
             </transition>
-          </li> -->
+          </li> --> 
         </ul>
       </div>
     </aside>
