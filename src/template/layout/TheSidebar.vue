@@ -6,19 +6,19 @@
       <div class="sidebar__menu">
         <label class="sidebar__menu__headline">Main Menu</label>
         <ul class="sidebar__menu__item">
-          <li>
+          <li @click="setSidebarVisibility">
             <router-link to="/buttons" class="item__link">
               <font-awesome-icon icon="ring" size="sm" class="icon" />
               Buttons
             </router-link>
           </li>
-          <li>
+          <li @click="setSidebarVisibility">
             <router-link to="/input" class="item__link">
               <font-awesome-icon icon="grip-lines" size="sm" class="icon" />
               Inputs
             </router-link>
           </li>
-          <li>
+          <li @click="setSidebarVisibility">
             <router-link to="/overlay" class="item__link">
               <font-awesome-icon icon="columns" size="sm" class="icon" />
               Overlay
