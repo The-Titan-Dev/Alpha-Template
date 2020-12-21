@@ -13,3 +13,52 @@
 .alpha-input:hover{
      @include box-shadow(0 0 8px 5px #edeef1);
 }
+
+.alpha__table {
+  font-size: 14px;
+
+  &__pagination {
+    button {
+      color: $red;
+    }
+
+    .active .page-link {
+      color: white;
+      background: $red;
+      border: 0;
+    }
+  }
+}
+
+.alpha__form__label {
+  font-weight: bold;
+}
+
+.alpha__modal__title {
+  font-weight: bold;
+  color: $black;
+}
+
+form {
+  color: $black;
+}
+
+table,
+tr,
+td,
+th {
+  color: $black;
+}
+
+.toastification--success {
+  background: $primary;
+}
+
+.toastification--warning {
+  background: $warning;
+}
+
+.toastification--error {
+  background: $black;
+  color: white;
+}
