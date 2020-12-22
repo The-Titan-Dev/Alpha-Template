@@ -1,0 +1,486 @@
+$option-padding: 9px 10px;
+$dark-black:#404040;
+$white:white;
+$sm:16px;
+$md:17px;
+$lg:23px;
+
+.adropdown {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: var(--adropdown-width);
+  margin-right: 10px;
+  border:1px solid $dark-gray;
+  @include box-shadow(0 0 3px 0.1px #d8d8d8);
+  transition: all 0.7s linear;
+  cursor:not-allowed;
+  text-align: left;
+  .adropdown__label-container {
+    &.adropdown--disabled
+    {
+      pointer-events: none;
+      cursor: default;
+      background: $gray;
+      color:$dark-gray;
+     
+    }
+    &.adropdown--primary
+    {
+      background: $white;
+      color:$dark-black;
+      cursor: pointer;
+    }
+    &.adropdown--default
+    {
+      background: $white;
+      cursor: pointer;
+    }
+    &.adropdown--secondary
+    {
+      background: $white;
+      cursor: pointer;
+    }
+    &.adropdown--success
+    {
+      background: $white;
+      cursor: pointer;
+    }
+    &.adropdown--info
+    {
+      background:  $white;
+      cursor: pointer;
+    }
+    &.adropdown--warning
+    {
+      background: $white;
+      cursor: pointer;
+    }
+    &.adropdown--danger
+    {
+      background: $white;
+      cursor: pointer;
+    }
+    display: flex;
+    width: 100%;
+
+    .adropdown__label {
+      display: flex;
+      justify-content: space-between;
+      flex: 1 1 auto;
+      align-items: center;
+      outline:none;
+      padding: 0px 8px 0px 0px;
+      .text {     
+        &--sm
+        {
+         font-size: $sm;
+         padding: 3px 0px 3px 7px;
+        }
+        &--md
+        {
+          font-size: $md;
+          padding: 5px 0px 5px 7px;
+        }
+        &--lg
+        {
+          font-size: $lg;
+           padding: 4px 0px 4px 7px;
+        }
+        &--primary
+        {
+         color:$dark-black;
+      
+        }
+        &--default
+        {
+          color:$dark-black;
+          
+        }
+        &--secondary
+        {
+          color:$dark-black;
+        }
+        &--success
+        {
+          color:$dark-black;
+        }
+        &--warning
+        {
+          color:$dark-black;
+        }
+        &--danger
+        {
+          color:$dark-black;
+        }
+      }
+      .adropdown__label--icon
+       {
+        font-size: 0.9em;
+        margin-bottom:0.09em;
+      }
+      .angle--down {
+        display: flex;
+        justify-content: center;
+        border:solid;
+        align-items: center;        
+        background: transparent;
+       
+        padding: 4px;
+        width: 1px;
+        height: 1px;
+        margin: -3px 5px 0 0;       
+        transform: rotate(45deg);
+        transition: all 0.7s;
+        &.text--primary
+        {
+          border-color:$dark-black;
+        }
+        &.text--default
+        {
+          border-color:$dark-black;
+        }
+        &.text--secondary
+        {
+          border-color:$dark-black;
+        }
+        &.text--success
+        {
+          border-color:$dark-black;
+        }
+        &.text--warning
+        {
+          border-color:$dark-black;
+        }
+        &.text--danger
+        {
+          border-color:$dark-black;
+        }
+        &--sm
+        {
+          border-width: 0 1px 1px 0;
+        }
+        &--md
+        {
+          border-width: 0 1px 1px 0;
+        }
+        &--lg
+        {
+          border-width: 0 2px 2px 0;
+        }
+      }
+      .toggled 
+      {
+        margin-bottom: -12px;
+        transform: rotate(-135deg);
+        transition: all 0.7s;
+      }
+
+    }
+    
+  }
+  .options {
+    width: 100%;
+    outline: none;
+    position: absolute;
+    width: var(--adropdown-width);
+    border-top: none;
+    margin-left:-1px;
+    border: 1px solid $dark-gray;
+    border-top:none;
+    .option--icon
+    {
+      font-size: 0.9em;
+      margin-bottom:0.09em;
+    }
+    .option {
+      display: flex;
+      align-items: center;
+  
+      &--sm{
+        font-size: $sm;
+        height: calc($sm + 5px);
+        padding-left: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background:$white;
+
+      }
+      &--md{
+        font-size: $md;
+        height: calc($md + 5px);
+        padding: $option-padding;
+        background:$white;
+
+      }
+      &--lg{
+        font-size: $lg;
+        height: calc($lg + 5px);
+        padding: $option-padding;
+        background:$white;
+ 
+      }
+
+      &--primary
+      {
+        color:$dark-black;
+        cursor: pointer;
+      }
+      &--default
+      {
+        color:$dark-black;
+        cursor: pointer;
+      }
+      &--secondary
+      {
+        color:$dark-black;
+        cursor: pointer;
+      }
+      &--success
+      {
+        color:$dark-black;
+        cursor: pointer;
+      }
+      &--warning
+      {
+        color:$dark-black;
+        cursor: pointer;
+      }
+      &--danger
+      {
+        color:$dark-black;
+        cursor: pointer;
+      }
+      &--disabled
+      {
+        cursor:no-drop;
+        color:$dark-gray;
+        background-color:$gray;
+        pointer-events: none;
+      
+      }
+    
+    }
+   
+    .option--sm:hover {
+      background:$dark-gray;
+    }
+    .option--md:hover {
+      background:$dark-gray;
+    }
+    .option--lg:hover {
+      background:$dark-gray
+    }
+    .option--disabled:hover {
+      color:$dark-gray;
+      background-color:$gray;
+      pointer-events: none;
+      cursor:no-drop;
+    }
+  }
+  .adropdown__span
+    {
+      &--default
+      {
+        animation-name: line_out;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards; 
+        animation-iteration-count: 1;
+        border:1px solid $dark-gray;
+        visibility: hidden;
+        margin-top:-2px;
+        -webkit-transition: opacity 600ms, visibility 600ms;
+        transition: opacity 600ms, visibility 600ms;
+        outline: none;
+        cursor:none;
+      }
+      &--primary
+      {
+        animation-name: line_out;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards; 
+        animation-iteration-count: 1;
+        border:1px solid $prime;
+        visibility: hidden;
+        margin-top:-2px;
+        -webkit-transition: opacity 600ms, visibility 600ms;
+        transition: opacity 600ms, visibility 600ms;
+        outline: none;   
+      }
+      &--warning
+      {
+        animation-name: line_out;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards; 
+        animation-iteration-count: 1;
+        border:1px solid $orange;
+        visibility: hidden;
+        margin-top:-2px;
+        -webkit-transition: opacity 600ms, visibility 600ms;
+        transition: opacity 600ms, visibility 600ms;
+        outline: none;
+      }
+      &--info
+      {
+        animation-name: line_out;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards; 
+        animation-iteration-count: 1;
+        border:1px solid $blue;
+        visibility: hidden;
+        margin-top:-2px;
+        -webkit-transition: opacity 600ms, visibility 600ms;
+        transition: opacity 600ms, visibility 600ms;
+        outline: none;
+      }
+      &--success
+      {
+        animation-name: line_out;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards; 
+        animation-iteration-count: 1;
+        border:1px solid $green;
+        visibility: hidden;
+        margin-top:-2px;
+        -webkit-transition: opacity 600ms, visibility 600ms;
+        transition: opacity 600ms, visibility 600ms;
+        outline: none;
+      }
+      &--danger
+      {
+        animation-name: line_out;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards; 
+        animation-iteration-count: 1;
+        border:1px solid red;
+        visibility: hidden;
+        margin-top:-2px;
+        -webkit-transition: opacity 600ms, visibility 600ms;
+        transition: opacity 600ms, visibility 600ms;
+        outline: none;
+      }
+      &--disabled
+      {
+        display:none;
+      }
+    }
+  &[tabIndex="1"] 
+  {
+    outline: none;
+    .adropdown__span
+    {  
+      &--default
+      {      
+        animation-name: line_in;
+        animation-duration: 0.5s;
+        border:1px solid $dark-gray;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards; 
+        visibility: visible ;
+        outline: none;
+      }
+      &--primary
+      {
+        animation-name: line_in;
+        animation-duration: 0.5s;
+        border:1px solid $prime;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards; 
+        visibility: visible ;
+        outline: none;
+      }
+      &--warning
+      {
+        animation-name: line_in;
+        animation-duration: 0.5s;
+        border:1px solid $orange;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards; 
+        visibility: visible ;
+        outline: none;
+      }
+      &--info
+      {
+        animation-name: line_in;
+        animation-duration: 0.5s;
+        border:1px solid $blue;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards; 
+        visibility: visible ;
+        outline: none;
+      }
+      &--success
+      {
+        animation-name: line_in;
+        animation-duration: 0.5s;
+        border:1px solid $green;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards; 
+        visibility: visible ;
+        outline: none;
+      }
+      &--danger
+      {
+        animation-name: line_in;
+        animation-duration: 0.5s;
+        border:1px solid red;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards; 
+        visibility: visible ;
+        outline: none;
+      }
+      &--disabled
+      {
+       display:none;
+      }
+     
+    }
+  }
+  @keyframes line_in {
+    from { 
+      width:0%;
+      opacity: 0;
+    }
+    to { 
+      width:85%;
+      opacity:1;
+    }
+  }
+  @keyframes line_out {
+    from { 
+      width:85%;
+      opacity: 1;
+    }
+    to { 
+      width:0%;
+      opacity: 0;
+    }
+  }
+}
+
+//Bouncing Effect
+.expand {
+  overflow: hidden;
+  background-color: white;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(
+    0.175,
+    0.885,
+    0.32,
+    1.275
+  ); 
+  &[aria-expanded='true'] {
+    z-index:999;
+  }
+  &[aria-expanded='false'] {
+    height: 0 !important;
+    z-index:0;
+    transition-timing-function: cubic-bezier(
+      0.6,
+      -0.28,
+      0.735,
+      0.045
+    ); 
+  }
+}

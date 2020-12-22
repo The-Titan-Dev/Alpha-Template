@@ -18,8 +18,6 @@
       class="acards__photo"
       :class="'acards__photo--' + img_position"
     >
-      <!-- <img  :src="img"> -->
-      <!-- <img class="acards__img" :src="'../../../assets/'+img_src"> -->
     </div>
     <div :style="cardWidth">
       <slot></slot>

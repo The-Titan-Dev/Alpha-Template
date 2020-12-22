@@ -9,6 +9,8 @@ const Blank = () => import(/*webpackChunkName: "blank-page"*/ "@/views/Blank");
 const Buttons = () => import(/*webpackChunkName: "Button"*/ "@/views/Button");
 const Input = () => import(/*webpackChunkName: "Input"*/ "@/views/Alpha/Input");
 const Cards = () => import(/*webpackChunkName: "Card"*/ "@/views/Card");
+const Dropdown = () => import(/*webpackChunkName: "Card"*/ "@/views/Dropdown");
+
 
 Vue.use(VueRouter);
 
@@ -37,6 +39,11 @@ const routes = [
         path: "/cards",
         name: "Cards",
         component: Cards
+      },
+      {
+        path: "/dropdown",
+        name: "Dropdown",
+        component: Dropdown
       }
     ]
   }
