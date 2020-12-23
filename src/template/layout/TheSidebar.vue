@@ -24,6 +24,12 @@
               Overlay
             </router-link>
           </li>
+          <li @click="setSidebarVisibility">
+            <router-link to="/confirm" class="item__link">
+              <font-awesome-icon icon="columns" size="sm" class="icon" />
+              Confirm
+            </router-link>
+          </li>
           <!-- <li>
             <a>
               <font-awesome-icon icon="clone" size="sm" class="icon" />
@@ -90,7 +96,7 @@
                 </li>
               </ul>
             </transition>
-          </li> --> 
+          </li> -->
         </ul>
       </div>
     </aside>
@@ -102,11 +108,11 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: "TheSidebar",
   methods: {
-    ...mapActions(["setSidebarVisibility", "setSidebarSubMenuVisibility"])
+    ...mapActions(["setSidebarVisibility", "setSidebarSubMenuVisibility"]),
   },
   computed: {
-    ...mapGetters(["getShowSidebarStatus", "getShowSidebarSubMenuStatus"])
-  }
+    ...mapGetters(["getShowSidebarStatus", "getShowSidebarSubMenuStatus"]),
+  },
 };
 </script>
 
