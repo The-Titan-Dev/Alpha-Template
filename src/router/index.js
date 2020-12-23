@@ -10,6 +10,7 @@ const Buttons = () => import(/*webpackChunkName: "Button"*/ "@/views/Button");
 const Input = () => import(/*webpackChunkName: "Input"*/ "@/views/Alpha/Input");
 const Cards = () => import(/*webpackChunkName: "Card"*/ "@/views/Card");
 const ToastView = () => import(/*webpackChunkName: "ToastView"*/ "@/views/ToastView");
+const Chart = () => import(/*webpackChunkName: "Chart"*/ "@/views/Chart");
 
 Vue.use(VueRouter);
 
@@ -43,6 +44,11 @@ const routes = [
         path: "/toast",
         name: "toast",
         component: ToastView
+      },
+      {
+        path: "/chart",
+        name: "chart",
+        component: Chart
       }
     ]
   }

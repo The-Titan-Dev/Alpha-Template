@@ -85,6 +85,7 @@ export default {
   position: relative;
   transition: 0.5s;
   z-index: 4;
+  padding: 10px;
 
   .acards__circle {
     animation: circle1 1s;
