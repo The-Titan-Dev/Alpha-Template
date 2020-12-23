@@ -13,8 +13,9 @@ $light-orange : #c67405;
 $light-red : #d63343;
 $green : #36aa5d;
 $light-green : #27954c;
-$blue : #3698f3;
-$light-blue : rgb(58, 186, 245);
+$lime-green : #78c090;
+$blue : #187cda;
+$navy-blue : rgb(29, 108, 173);
 $pink : #dd7474;
 $light-pink : #eca3a3;
 
@@ -36,17 +37,18 @@ $primary-disabled :linear-gradient(#f17a86,#f17a86);
 $success : $green;
 $success-hover :$light-green;
 $success-animate-border : $light-green, #ceffdd;
-$success-disabled :linear-gradient(#7af181,#82f17a);
+$success-disabled : $lime-green;
 
 
 $warning : $orange;
 $warning-hover : $light-orange;
 $warning-animate-border : $light-orange, #ffebce;
-$warning-disabled :linear-gradient(#f1bd7a,#f1d17a);
+$warning-disabled : #f8bb6c;
 
-$info : linear-gradient($blue, #1e87e9);
-$info-hover :linear-gradient($light-blue,#3a98f0);
-$info-animate-border : $light-blue, #cedfff;
+// $info : linear-gradient($blue, #1e87e9);
+$info : $blue;
+$info-hover :$navy-blue;
+$info-animate-border : $navy-blue, #cedfff;
 $info-disabled :linear-gradient(#7ab1f1,#7ab1f1);
 
 $error : linear-gradient($red, #e04151);

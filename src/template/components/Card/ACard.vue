@@ -141,7 +141,7 @@ export default {
     span:nth-child(1) {
       background-color: $blue;
       span:nth-child(1) {
-        background-color: $light-blue;
+        background-color: $navy-blue;
       }
     }
 

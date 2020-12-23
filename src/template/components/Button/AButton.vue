@@ -3,12 +3,9 @@
     :type="type"
     :disabled="disabled"
     class="abtn"
-    :class="[
-      size ? 'abtn--' + size : '', 
-      variant ? 'abtn--' + variant : '',
-      classname
-      ]"
+    :class="get_class"
     :id="id"
+    :style="get_style"
     >
     <span></span>
     <span></span>
@@ -28,11 +25,45 @@ export default {
     disabled : Boolean,
     classname : String,
     id : String,
-    variant : String
+    variant : String,
+    shadow : String,
+    radius : String
   },
   methods: {
     onclick_method() {
       // this.$parent[this.onclick]();
+    },
+   
+  },
+  computed:{
+     get_style: function() {
+
+      let list_styles = '';
+      let shadows = this.shadow;
+      if(this.shadow == 'light')
+      {
+        shadows= '3px';
+      }
+      else if(this.shadow == 'heavy')
+      {
+        shadows = '6px';
+      }
+      list_styles += this.shadow ? `box-shadow: 0 0 ${shadows} #646464;`:'';
+      list_styles += this.radius ? `border-radius:${this.radius};`:'';
+
+      return list_styles;
+
+    },
+    get_class: function(){
+
+      let list_class = '';
+      
+      list_class += this.size ? `abtn--${this.size} `:'';
+      list_class += this.variant ? `abtn--${this.variant} `:'';
+      list_class += this.classname ? `abtn--${this.classname} `:'';
+
+      return list_class;
+      
     }
   }
 };
@@ -274,7 +305,7 @@ export default {
 
   &--success:disabled {
     background: $success-disabled;
-    color: $black;
+     color: $gray;
   }
 
   &--warning {
@@ -306,7 +337,7 @@ export default {
 
   &--warning:disabled {
     background: $warning-disabled;
-    color: $black;
+    color: $gray;
   }
 
   &--info {
@@ -334,7 +365,7 @@ export default {
 
   &--info:disabled {
     background: $info-disabled;
-    color: $black;
+     color: $gray;
   }
 }
 

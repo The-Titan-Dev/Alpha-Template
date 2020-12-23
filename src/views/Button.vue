@@ -6,9 +6,9 @@
           <ACardHeader>DEFAULT</ACardHeader>
           <ACardBody>
               <b-row style="text-align:center">
-                <b-col><AButton v-on:click.native="doSomething" type="submit">NORMAL</AButton></b-col>
-                <b-col><AButton v-on:click.native="doSomething" size="sm">Small Button</AButton></b-col>
-                <b-col><AButton v-on:click.native="doSomething" size="md">Default Button</AButton></b-col>
+                <b-col><AButton v-on:click.native="doSomething" type="submit" shadow="heavy" radius="5px">NORMAL</AButton></b-col>
+                <b-col><AButton v-on:click.native="doSomething" size="sm" shadow="light">Small Button</AButton></b-col>
+                <b-col><AButton v-on:click.native="doSomething" size="md" shadow="3px">Default Button</AButton></b-col>
                 <b-col>
                       <AButton v-on:click.native="doSomething" size="lg">
                       Large Button
