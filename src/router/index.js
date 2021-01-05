@@ -3,14 +3,18 @@ import VueRouter from "vue-router";
 
 // Main Layout Component
 const TheContainer = () =>
-  import(/*webpackChunkName: "layout"*/ "@/template/layout/TheContainer");
+	import(/*webpackChunkName: "layout"*/ "@/template/layout/TheContainer");
 // Pages
 const Blank = () => import(/*webpackChunkName: "blank-page"*/ "@/views/Blank");
 const Buttons = () => import(/*webpackChunkName: "Button"*/ "@/views/Button");
 const Input = () => import(/*webpackChunkName: "Input"*/ "@/views/Alpha/Input");
 const Cards = () => import(/*webpackChunkName: "Card"*/ "@/views/Card");
+
 const ToastView = () => import(/*webpackChunkName: "ToastView"*/ "@/views/ToastView");
 const Chart = () => import(/*webpackChunkName: "Chart"*/ "@/views/Chart");
+const Overlay = () => import(/*webpackChunkName: "Overlay"*/ "@/views/Overlay");
+const Confirm = () => import(/*webpackChunkName: "Confirm"*/ "@/views/Confirm");
+
 
 Vue.use(VueRouter);
 
@@ -49,15 +53,25 @@ const routes = [
         path: "/chart",
         name: "chart",
         component: Chart
-      }
+      },
+      {
+				path: "/overlay",
+				name: "Overlay",
+				component: Overlay,
+			},
+			{
+				path: "/confirm",
+				name: "Confirm",
+				component: Confirm,
+			},
     ]
   }
 ];
 
 const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
-  routes
+	mode: "history",
+	base: process.env.BASE_URL,
+	routes,
 });
 
 export default router;
