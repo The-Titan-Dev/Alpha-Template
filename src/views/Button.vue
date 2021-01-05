@@ -143,6 +143,35 @@
           </ACardBody>
         </ACard>
       </div>
+      <div>
+         <ACard>
+          <ACardHeader>ERROR</ACardHeader>
+          <ACardBody>
+             <b-row style="text-align:center">
+                <b-col><AButton  v-on:click.native="doSomething" variant="error">NORMAL</AButton></b-col>
+                <b-col><AButton v-on:click.native="doSomething" size="sm" variant="error">SMALL</AButton></b-col>
+                <b-col><AButton v-on:click.native="doSomething" size="md" variant="error">MEDIUM</AButton></b-col>
+                <b-col>
+                      <AButton v-on:click.native="doSomething" size="lg" variant="error">
+                      LARGE
+                      </AButton>
+                </b-col>
+              </b-row>
+              <br>
+               <b-row style="text-align:center">
+                <b-col><AButton  v-on:click.native="doSomething" variant="error"  disabled>NORMAL</AButton></b-col>
+                <b-col><AButton v-on:click.native="doSomething" size="sm" variant="error"  disabled>SMALL</AButton></b-col>
+                <b-col><AButton v-on:click.native="doSomething" size="md" variant="error"  disabled>MEDIUM</AButton></b-col>
+                <b-col>
+                      <AButton v-on:click.native="doSomething" size="lg" variant="error" disabled>
+                      LARGE
+                      </AButton>
+                </b-col>
+              </b-row>
+          </ACardBody>
+        </ACard>
+      </div>
+
        <ACard>
           <ACardHeader>Button Props</ACardHeader>
           <ACardBody>

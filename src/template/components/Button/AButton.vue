@@ -367,6 +367,34 @@ export default {
     background: $info-disabled;
      color: $gray;
   }
+
+  &--error {
+    background: $error;
+    border-color: rgb(224, 224, 224);
+    color: rgb(255, 255, 255);
+
+    span:nth-child(1) {
+      background: linear-gradient(to left, $error-animate-border, #ffffff00);
+    }
+    span:nth-child(2) {
+      background: linear-gradient(to top, $error-animate-border, #ffffff00);
+    }
+    span:nth-child(3) {
+      background: linear-gradient(to right, $error-animate-border, #ffffff00);
+    }
+    span:nth-child(4) {
+      background: linear-gradient(to bottom, $error-animate-border, #ffffff00);
+    }
+
+    &:hover {
+      background: $error-hover;
+    }
+  }
+
+  &--error:disabled {
+    background: $error-disabled;
+    color: $gray;
+  }
 }
 
 @keyframes slideRight {

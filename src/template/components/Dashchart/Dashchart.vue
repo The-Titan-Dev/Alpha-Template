@@ -1,5 +1,6 @@
 <template>
     <div class="dashcard" :style="get_style" :class="get_class">
+        <line-chart :chart-data="datacollection"></line-chart>
         <slot></slot>    
     </div>
 </template>
@@ -7,13 +8,19 @@
 
 
 <script>
+import LineChart from './chart'
+
 export default {
     name : "Dashcard",
     props: {
         classname : String,
         radius : String,
         shadow : String,
-        variant : String
+        variant : String,
+        datacollection: Object
+    },
+    components:{
+        LineChart
     },
     computed : {
          get_style: function() {
@@ -64,7 +71,22 @@ canvas{
 
     &--primary{
         background: $primary;
+    }
 
+    &--success {
+        background: $success;
+    }
+
+    &--info {
+        background: $info;
+    }
+
+     &--warning {
+        background: $warning;
+    }
+
+    &--error {
+        background: $error;
     }
 }
 </style>

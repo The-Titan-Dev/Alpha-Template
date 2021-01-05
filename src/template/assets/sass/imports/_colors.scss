@@ -51,7 +51,7 @@ $info-hover :$navy-blue;
 $info-animate-border : $navy-blue, #cedfff;
 $info-disabled :linear-gradient(#7ab1f1,#7ab1f1);
 
-$error : linear-gradient($red, #e04151);
-$error-hover :linear-gradient($red,#da3c4c);
-$error-animate-border : $red, #ffcece;
-$error-disabled :linear-gradient(#f17a86,#f17a86);
+$error : $black;
+$error-hover :$gray__backdrop;
+$error-animate-border : rgba(53, 53, 53, 0.8);
+$error-disabled : #989a9a;
