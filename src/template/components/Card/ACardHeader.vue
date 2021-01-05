@@ -46,7 +46,7 @@ export default {
   }
 
   &--info {
-    color: $light-blue;
+    color: $navy-blue;
   }
 
   &--success {

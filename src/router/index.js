@@ -9,38 +9,52 @@ const Blank = () => import(/*webpackChunkName: "blank-page"*/ "@/views/Blank");
 const Buttons = () => import(/*webpackChunkName: "Button"*/ "@/views/Button");
 const Input = () => import(/*webpackChunkName: "Input"*/ "@/views/Alpha/Input");
 const Cards = () => import(/*webpackChunkName: "Card"*/ "@/views/Card");
+
+const ToastView = () => import(/*webpackChunkName: "ToastView"*/ "@/views/ToastView");
+const Chart = () => import(/*webpackChunkName: "Chart"*/ "@/views/Chart");
 const Overlay = () => import(/*webpackChunkName: "Overlay"*/ "@/views/Overlay");
 const Confirm = () => import(/*webpackChunkName: "Confirm"*/ "@/views/Confirm");
+
 
 Vue.use(VueRouter);
 
 const routes = [
-	{
-		path: "/",
-		name: "TheContainer",
-		component: TheContainer,
-		children: [
-			{
-				path: "/blank",
-				name: "Blank",
-				component: Blank,
-			},
-			{
-				path: "/buttons",
-				name: "Buttons",
-				component: Buttons,
-			},
-			{
-				path: "/input",
-				name: "input",
-				component: Input,
-			},
-			{
-				path: "/cards",
-				name: "Cards",
-				component: Cards,
-			},
-			{
+  {
+    path: "/",
+    name: "TheContainer",
+    component: TheContainer,
+    children: [
+      {
+        path: "/blank",
+        name: "Blank",
+        component: Blank
+      },
+      {
+        path: "/buttons",
+        name: "Buttons",
+        component: Buttons
+      },
+      {
+        path: "/input",
+        name: "input",
+        component: Input
+      },
+      {
+        path: "/cards",
+        name: "Cards",
+        component: Cards
+      },
+      {
+        path: "/toast",
+        name: "toast",
+        component: ToastView
+      },
+      {
+        path: "/chart",
+        name: "chart",
+        component: Chart
+      },
+      {
 				path: "/overlay",
 				name: "Overlay",
 				component: Overlay,
@@ -50,8 +64,8 @@ const routes = [
 				name: "Confirm",
 				component: Confirm,
 			},
-		],
-	},
+    ]
+  }
 ];
 
 const router = new VueRouter({

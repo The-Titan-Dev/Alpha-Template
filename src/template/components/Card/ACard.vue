@@ -3,7 +3,7 @@
     class="acards"
     :style="{ width: width, 'border-radius': radius }"
     :class="[
-      type ? 'acards--' + type : '',
+      variant ? 'acards--' + variant : '',
       theme ? 'acards--' + theme : '',
       classname
     ]"
@@ -32,17 +32,17 @@ export default {
   name: "ACards",
   props: {
     classname: String,
-    type: String,
+    variant: String,
     id: String,
     width: String,
     theme: {
-      type: String,
+      variant: String,
       default: "default"
     },
     radius: String,
     img_src: String,
     img_position: {
-      type: String,
+      variant: String,
       default: "top"
     }
   },
@@ -85,6 +85,7 @@ export default {
   position: relative;
   transition: 0.5s;
   z-index: 4;
+  padding: 10px;
 
   .acards__circle {
     animation: circle1 1s;
@@ -141,7 +142,7 @@ export default {
     span:nth-child(1) {
       background-color: $blue;
       span:nth-child(1) {
-        background-color: $light-blue;
+        background-color: $navy-blue;
       }
     }
 

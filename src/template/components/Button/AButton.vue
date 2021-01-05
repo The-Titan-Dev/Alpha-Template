@@ -3,13 +3,9 @@
     :type="type"
     :disabled="disabled"
     class="abtn"
-    :class="[
-      size ? 'abtn--' + size : '', 
-      variant ? 'abtn--' + variant : '',
-      disabled ? 'abtn--' + disabled : '',
-      classname
-      ]"
+    :class="get_class"
     :id="id"
+    :style="get_style"
     >
     <span></span>
     <span></span>
@@ -29,11 +25,45 @@ export default {
     disabled : Boolean,
     classname : String,
     id : String,
-    variant : String
+    variant : String,
+    shadow : String,
+    radius : String
   },
   methods: {
     onclick_method() {
       // this.$parent[this.onclick]();
+    },
+   
+  },
+  computed:{
+     get_style: function() {
+
+      let list_styles = '';
+      let shadows = this.shadow;
+      if(this.shadow == 'light')
+      {
+        shadows= '3px';
+      }
+      else if(this.shadow == 'heavy')
+      {
+        shadows = '6px';
+      }
+      list_styles += this.shadow ? `box-shadow: 0 0 ${shadows} #646464;`:'';
+      list_styles += this.radius ? `border-radius:${this.radius};`:'';
+
+      return list_styles;
+
+    },
+    get_class: function(){
+
+      let list_class = '';
+      
+      list_class += this.size ? `abtn--${this.size} `:'';
+      list_class += this.variant ? `abtn--${this.variant} `:'';
+      list_class += this.classname ? `abtn--${this.classname} `:'';
+
+      return list_class;
+      
     }
   }
 };
@@ -45,7 +75,7 @@ export default {
 .abtn {
   border-radius: 5px;
   border-style: none;
-  box-shadow: 0 0 5px #646464;
+  box-shadow: 0 0 2px #646464;
   // font-size: 14px;
   // margin: 4px;
   overflow: hidden;
@@ -54,6 +84,7 @@ export default {
   transition: 0.3s;
   padding: .375rem .75rem;
   font-size: 1rem;
+  color: $black;
 
   &:hover:enabled {
     transform: scale(1.1);
@@ -95,7 +126,7 @@ export default {
 
     span:nth-child(1) {
       height: 2px;
-      left: -200%;
+      left: -240%;
       position: absolute;
       top: 0%;
       transition: 0.8s;
@@ -116,7 +147,7 @@ export default {
       bottom: 0%;
       height: 2px;
       position: absolute;
-      right: -200%;
+      right: -240%;
       transition: 0.8s;
       transition-delay: 0.2s;
       width: 100px;
@@ -136,7 +167,7 @@ export default {
     font-size: 1rem;
     span:nth-child(1){
       height: 2px;
-      left: -140%;
+      left: -240%;
       position: absolute;
       top: 0%;
       transition: 0.8s;
@@ -157,7 +188,7 @@ export default {
       bottom: 0%;
       height: 2px;
       position: absolute;
-      right: -140%;
+      right: -240%;
       transition: 0.8s;
       transition-delay: 0.2s;
       width: 100px;
@@ -179,7 +210,7 @@ export default {
 
     span:nth-child(1) {
       height: 2px;
-      left: -110%;
+      left: -240%;
       position: absolute;
       top: 0%;
       transition: 0.8s;
@@ -199,7 +230,7 @@ export default {
       bottom: 0%;
       height: 2px;
       position: absolute;
-      right: -110%;
+      right: -240%;
       transition: 0.8s;
       transition-delay: 0.2s;
       width: 100px;
@@ -274,13 +305,13 @@ export default {
 
   &--success:disabled {
     background: $success-disabled;
-    color: $black;
+     color: $gray;
   }
 
   &--warning {
     background: $warning;
     border-color: rgb(224, 224, 224);
-    color: rgb(48, 47, 42);
+    color: $gray;
 
     span:nth-child(1) {
       background: linear-gradient(to left, $warning-animate-border, #ffffff00);
@@ -306,7 +337,7 @@ export default {
 
   &--warning:disabled {
     background: $warning-disabled;
-    color: $black;
+    color: $gray;
   }
 
   &--info {
@@ -334,7 +365,35 @@ export default {
 
   &--info:disabled {
     background: $info-disabled;
-    color: $black;
+     color: $gray;
+  }
+
+  &--error {
+    background: $error;
+    border-color: rgb(224, 224, 224);
+    color: rgb(255, 255, 255);
+
+    span:nth-child(1) {
+      background: linear-gradient(to left, $error-animate-border, #ffffff00);
+    }
+    span:nth-child(2) {
+      background: linear-gradient(to top, $error-animate-border, #ffffff00);
+    }
+    span:nth-child(3) {
+      background: linear-gradient(to right, $error-animate-border, #ffffff00);
+    }
+    span:nth-child(4) {
+      background: linear-gradient(to bottom, $error-animate-border, #ffffff00);
+    }
+
+    &:hover {
+      background: $error-hover;
+    }
+  }
+
+  &--error:disabled {
+    background: $error-disabled;
+    color: $gray;
   }
 }
 

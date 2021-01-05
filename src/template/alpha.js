@@ -58,21 +58,33 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 import Toast, { POSITION, TYPE } from "vue-toastification";
 import "vue-toastification/dist/index.css";
+import "./assets/sass/alpha/toaster.scss";
 
 const options = {
-  // You can set your default options here
-  position: POSITION.TOP_RIGHT,
-  toastClassName: "my-custom-toast-class",
+  position: POSITION.BOTTOM_RIGHT,
   toastDefaults: {
-    // ToastOptions object for each type of toast
     [TYPE.ERROR]: {
-        timeout: 10000,
+        timeout: 2000,
         closeButton: false,
+        toastClassName : 'toast-error'
     },
     [TYPE.SUCCESS]: {
-        timeout: 3000,
-        showCloseButtonOnHover: true
-    }    
+        timeout: 2000,
+        toastClassName : 'toast-success',
+        
+    },
+    [TYPE.WARNING]: {
+        timeout: 2000,
+        toastClassName : 'toast-warning'
+    },
+    [TYPE.INFO]: {
+        timeout: 2000,
+        toastClassName : 'toast-info'
+    },
+    [TYPE.DEFAULT]: {
+      timeout: 2000,
+      toastClassName : 'toast-default'
+    }
 }
 
 };
