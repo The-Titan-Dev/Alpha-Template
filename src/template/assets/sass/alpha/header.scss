@@ -1,5 +1,5 @@
 @import '../imports/general';
-header {
+.alpha__header {
     align-items: center;
     background: white;
     border-top: 2px solid $red;
@@ -213,7 +213,7 @@ header {
 
 // MEDIASCREENS
 @include xl {
-    header {
+    .alpha__header {
         padding: 0 50px 0 50px;
     }
 
@@ -223,7 +223,7 @@ header {
 }
 
 @include lg {
-    header {
+    .alpha__header {
         padding: 0 30px 0 30px;
     }
 
@@ -233,7 +233,7 @@ header {
 }
 
 @include md {
-    header {
+    .alpha__header {
         padding: 0 30px 0 30px;
     }
 
@@ -243,7 +243,7 @@ header {
 }
 
 @include sm {
-    header {
+    .alpha__header {
         padding: 0 30px 0 30px;
     }
 
@@ -253,7 +253,7 @@ header {
 }
 
 @include xs {
-    header {
+    .alpha__header {
         padding: 0 20px 0 20px;
     }
 

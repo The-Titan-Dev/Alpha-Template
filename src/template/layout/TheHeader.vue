@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="alpha__header">
     <div class="nav__left">
       <!-- MINIMIZED MENU -->
       <span class="menu__min" @click="setSidebarVisibility">
