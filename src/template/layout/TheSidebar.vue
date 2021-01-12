@@ -6,18 +6,19 @@
       <div class="sidebar__menu">
         <label class="sidebar__menu__headline">Main Menu</label>
         <ul class="sidebar__menu__item">
-          <li>
+          <li @click="setSidebarVisibility">
             <router-link to="/buttons" class="item__link">
               <font-awesome-icon icon="ring" size="sm" class="icon" />
               Buttons
             </router-link>
           </li>
-          <li>
+          <li @click="setSidebarVisibility">
             <router-link to="/input" class="item__link">
               <font-awesome-icon icon="grip-lines" size="sm" class="icon" />
               Inputs
             </router-link>
           </li>
+
           <li>
             <router-link to="/dropdown" class="item__link">
               <font-awesome-icon icon="ring" size="sm" class="icon" />
@@ -26,11 +27,21 @@
           </li>
           <!-- <li>
             <a>
+
+          <li @click="setSidebarVisibility">
+            <router-link to="/overlay" class="item__link">
+
               <font-awesome-icon icon="columns" size="sm" class="icon" />
-              Form
-            </a>
+              Overlay
+            </router-link>
           </li>
-          <li>
+          <li @click="setSidebarVisibility">
+            <router-link to="/confirm" class="item__link">
+              <font-awesome-icon icon="columns" size="sm" class="icon" />
+              Confirm
+            </router-link>
+          </li>
+          <!-- <li>
             <a>
               <font-awesome-icon icon="clone" size="sm" class="icon" />
               Cards
@@ -108,11 +119,11 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: "TheSidebar",
   methods: {
-    ...mapActions(["setSidebarVisibility", "setSidebarSubMenuVisibility"])
+    ...mapActions(["setSidebarVisibility", "setSidebarSubMenuVisibility"]),
   },
   computed: {
-    ...mapGetters(["getShowSidebarStatus", "getShowSidebarSubMenuStatus"])
-  }
+    ...mapGetters(["getShowSidebarStatus", "getShowSidebarSubMenuStatus"]),
+  },
 };
 </script>
 

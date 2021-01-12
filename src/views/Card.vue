@@ -11,15 +11,15 @@
           bulk of the card's content.123123
         </ACardBody>
         <ACardFooter>
-          <AButton size="md" type="primary">SUBMIT</AButton>
+          <AButton size="md" variant="primary">SUBMIT</AButton>
         </ACardFooter>
       </ACard>
     </div>
 
-    <b>type [primary,success,info,warning,]</b>
+    <b>variant [primary,success,info,warning,]</b>
     <div style="width: 100%; display: inline-flex">
       <ACard
-        type="primary"
+        variant="primary"
         classname="test"
         id="testID"
         radius="20px"
@@ -33,12 +33,12 @@
           bulk of the card's content.123123
         </ACardBody>
         <ACardFooter>
-          <AButton size="md" type="primary">SUBMIT</AButton>
+          <AButton size="md" variant="primary">SUBMIT</AButton>
         </ACardFooter>
       </ACard>
 
       <ACard
-        type="info"
+        variant="info"
         classname="test"
         id="testID"
         radius="20px"
@@ -52,12 +52,12 @@
           bulk of the card's content.123123
         </ACardBody>
         <ACardFooter>
-          <AButton size="md" type="info">SUBMIT</AButton>
+          <AButton size="md" variant="info">SUBMIT</AButton>
         </ACardFooter>
       </ACard>
 
       <ACard
-        type="success"
+        variant="success"
         classname="test"
         id="testID"
         radius="20px"
@@ -71,12 +71,12 @@
           bulk of the card's content.123123
         </ACardBody>
         <ACardFooter>
-          <AButton size="md" type="success">SUBMIT</AButton>
+          <AButton size="md" variant="success">SUBMIT</AButton>
         </ACardFooter>
       </ACard>
 
       <ACard
-        type="warning"
+        variant="warning"
         classname="test"
         id="testID"
         radius="20px"
@@ -90,7 +90,7 @@
           bulk of the card's content.123123
         </ACardBody>
         <ACardFooter>
-          <AButton size="md" type="warning">SUBMIT</AButton>
+          <AButton size="md" variant="warning">SUBMIT</AButton>
         </ACardFooter>
       </ACard>
     </div>
@@ -123,7 +123,7 @@
               <b>id </b>=> id attr,
               <b>radius</b> => card border-radius,
               <b>width</b> => card width,
-              <b>type</b> => card type (primary,info, success, warning),
+              <b>variant</b> => card variant (primary,info, success, warning),
               
             ];
             <b>ACardHeader =>  </b>
