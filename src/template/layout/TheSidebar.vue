@@ -18,8 +18,19 @@
               Inputs
             </router-link>
           </li>
+
+          <li>
+            <router-link to="/dropdown" class="item__link">
+              <font-awesome-icon icon="ring" size="sm" class="icon" />
+              Buttons
+            </router-link>
+          </li>
+          <!-- <li>
+            <a>
+
           <li @click="setSidebarVisibility">
             <router-link to="/overlay" class="item__link">
+
               <font-awesome-icon icon="columns" size="sm" class="icon" />
               Overlay
             </router-link>

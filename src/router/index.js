@@ -9,6 +9,8 @@ const Blank = () => import(/*webpackChunkName: "blank-page"*/ "@/views/Blank");
 const Buttons = () => import(/*webpackChunkName: "Button"*/ "@/views/Button");
 const Input = () => import(/*webpackChunkName: "Input"*/ "@/views/Alpha/Input");
 const Cards = () => import(/*webpackChunkName: "Card"*/ "@/views/Card");
+const Dropdown = () => import(/*webpackChunkName: "Card"*/ "@/views/Dropdown");
+
 
 const ToastView = () => import(/*webpackChunkName: "ToastView"*/ "@/views/ToastView");
 const Chart = () => import(/*webpackChunkName: "Chart"*/ "@/views/Chart");
@@ -45,6 +47,12 @@ const routes = [
         component: Cards
       },
       {
+
+        path: "/dropdown",
+        name: "Dropdown",
+        component: Dropdown
+      }
+
         path: "/toast",
         name: "toast",
         component: ToastView
@@ -64,6 +72,7 @@ const routes = [
 				name: "Confirm",
 				component: Confirm,
 			},
+
     ]
   }
 ];
