@@ -126,7 +126,7 @@ export default {
 
     span:nth-child(1) {
       height: 2px;
-      left: -240%;
+      left: -450%;
       position: absolute;
       top: 0%;
       transition: 0.8s;
@@ -147,7 +147,7 @@ export default {
       bottom: 0%;
       height: 2px;
       position: absolute;
-      right: -240%;
+      right: -450%;
       transition: 0.8s;
       transition-delay: 0.2s;
       width: 100px;
